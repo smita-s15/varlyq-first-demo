@@ -1,6 +1,7 @@
 import { Button, Flex, Input, Link, Stack } from "@chakra-ui/react"
 import NextLink from 'next/link'
 
+
 export const NavBar = () => {
     return (
         <Flex bg="primary" h="100px" justify="center">
