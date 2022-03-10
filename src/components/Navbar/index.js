@@ -4,7 +4,7 @@ import NextLink from 'next/link'
 
 export const NavBar = () => {
     return (
-        <Flex bg="primary" h="100px" justify="center">
+        <Flex bg="primary" h="100px" justify="center" >
             <Stack direction="row" spacing="16" align="center">
                 {Arr?.map((item, index) => {
                     return <NextLink key={index} href={item.link}>
