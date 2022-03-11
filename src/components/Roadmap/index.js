@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react"
+import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react"
 
 export const Roadmap = () => {
     return (
@@ -89,6 +89,7 @@ export const Roadmap = () => {
                 </Flex>
             </Flex>
             <BoxWithBorderInverse mt="-136px" />
+            <Divider/>
         </Flex>
     )
 }

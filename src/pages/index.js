@@ -8,6 +8,8 @@ import { Roadmap } from '../components/Roadmap'
 import { Footer } from '../components/Footer'
 import { FAQ } from '../components/FAQ'
 import { Card } from '../components/Card'
+import { CreateNFT } from '../components/CreateNFT'
+import { JoinCommunity } from '../components/JoinCommunity'
 
 export default function Home() {
   return (
@@ -25,6 +27,8 @@ export default function Home() {
         <Art />
         <Roadmap />
         <FAQ />
+        <CreateNFT/>
+        <JoinCommunity/>
         <Footer />
       </Flex>
       

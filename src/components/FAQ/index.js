@@ -1,18 +1,13 @@
 import { AddIcon, MinusIcon } from '@chakra-ui/icons'
 import {
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-  Box,
+  Accordion, AccordionButton, AccordionItem, AccordionPanel, Box,
   Flex,
-  Heading, Text, Button
+  Heading, Text
 } from '@chakra-ui/react'
 
 export const FAQ = () => {
   return (
-    <Flex w='60%' bg='primary' mx='auto' h='90rem' justify='center' direction='column' mx='auto' >
+    <Flex w='60%' bg='primary' mx='auto' my="10" justify='center' direction='column' mx='auto' >
       <Flex color='secondary' justify='center' fontSize='40px' mt={0}>
         <Heading> FAQ's </Heading>
       </Flex>
@@ -49,13 +44,7 @@ export const FAQ = () => {
         </Accordion >
       </Flex>
 
-      <Flex direction='column' bg='rgba(39, 39, 39, 0.6)' mt="100px" justify='center' mx='auto' w='961px' h='400px' borderRadius="23px" >
-        <Flex color='secondary' fontSize='40px' direction='column' align='center'  >
-          <Heading> Join Our Community </Heading>
-          <Text fontSize='20px'>At a very high level, most NFTs are part of the Ethereum blockchain.</Text>
-          <Button bg='#052FC2' color='secondary' p={2} w='186px' h='55px' borderRadius={20} shadow={1} fontSize='15px'>Launch Discord</Button>
-        </Flex>
-      </Flex>
+     
     </Flex>
 
   )
