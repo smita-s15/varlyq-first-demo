@@ -28,7 +28,7 @@ export const Roadmap = () => {
             <Flex justify="center">
                 <Flex direction="column" w="600px" pos="relative" left="120px">
                     <Heading fontSize="xl" color="white">V.I.P EVENTS</Heading>
-                    <Text mt="2" color="white">Imagine a world where the flapping of a butterfly's wing causes the biggest hurricanes.</Text>
+                    <Text mt="2" color="white">Imagine a world where the flapping of a butterflys wing causes the biggest hurricanes.</Text>
                     <Text mt="2" color="white">This is the power of the BRAIN 3.0</Text>
                     <Text mt="2" color="white">Our first global event will take place in February in Miami.</Text>
                     <Text mt="2" color="white">Many others will take place virtually through masterminds on Zoom or directly in the Metaverse ! </Text>
@@ -124,7 +124,7 @@ const BoxWithBorderInverse = (props) => {
         <Flex direction="column" w="400px" >
             <Flex justify="flex-end" >
 
-                <Flex boxSize="240" borderRight="3px solid #052FC2" borderBottom="3px solid #052FC2" borderRight="3px solid #052FC2" borderBottomRightRadius="90px" >
+                <Flex boxSize="240" borderRight="3px solid #052FC2" borderBottom="3px solid #052FC2"  borderBottomRightRadius="90px" >
                 </Flex>
             </Flex>
             <Flex >

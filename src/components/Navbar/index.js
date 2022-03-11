@@ -7,7 +7,7 @@ export const NavBar = () => {
         <Flex bg="primary" h="100px" justify="center" >
             <Stack direction="row" spacing="16" align="center">
                 {Arr?.map((item, index) => {
-                    return <NextLink key={index} href={item.link}>
+                    return <NextLink key={index} href={item.link} passHref>
                         <Link color="navLinkColor">{item.title}</Link>
                     </NextLink>
                 })}

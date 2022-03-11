@@ -7,9 +7,9 @@ import {
 
 export const FAQ = () => {
   return (
-    <Flex w='60%' bg='primary' mx='auto' my="10" justify='center' direction='column' mx='auto' >
+    <Flex w='60%' bg='primary' mx='auto' my="10" justify='center' direction='column'  >
       <Flex color='secondary' justify='center' fontSize='40px' mt={0}>
-        <Heading> FAQ's </Heading>
+        <Heading> FAQs </Heading>
       </Flex>
 
 

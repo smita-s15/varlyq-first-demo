@@ -14,7 +14,7 @@ export const Footer = () => {
                         </Flex>
                     </Stack>
                     <Stack spacing="4" flex="1" align='center' >
-                        <Text fontSize="md" fontSize='25px' color="secondary">
+                        <Text fontSize="md" color="secondary">
                             Sitemap
                         </Text>
                         <Stack spacing="5" shouldWrapChildren>
@@ -26,7 +26,7 @@ export const Footer = () => {
                         </Stack>
                     </Stack>
                     <Stack spacing="4" flex="1" >
-                        <Text fontSize="sm" fontSize='25px' color="secondary">
+                        <Text fontSize="sm" color="secondary">
                             Socials
                         </Text>
                         <Stack spacing="5" shouldWrapChildren>
@@ -38,7 +38,7 @@ export const Footer = () => {
                     </Stack>
                     <Stack spacing="4" flex="1" shouldWrapChildren >
                         <Text color='white'>HEAD OFFICE</Text>
-                        <Text fontSize="sm" fontSize='20px' color="secondary">
+                        <Text fontSize="sm"  color="secondary">
                             Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22, Charlottesville, CA 45565
                         </Text>
                         <Text mt={10} color='white'>NEWS LETTER</Text>
