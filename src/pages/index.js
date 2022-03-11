@@ -26,8 +26,8 @@ export default function Home() {
         <Card/>
         <Art />
         <Roadmap />
-        <FAQ />
         <CreateNFT/>
+        <FAQ />
         <JoinCommunity/>
         <Footer />
       </Flex>
