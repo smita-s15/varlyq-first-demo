@@ -1,12 +1,18 @@
 import { Flex, Image, Stack, Button, Text, Input, Divider, InputGroup, Icon } from "@chakra-ui/react"
-// import  Logo from '../../../public/Logo.png'
-import { EmailIcon} from '@chakra-ui/icons'
+import Logo from '../../../public/Logo.png'
+import { EmailIcon } from '@chakra-ui/icons'
+import NextImage from 'next/image'
 
 export const Footer = () => {
     return (
         <>
-            <Flex w='100%' bg='#272727' h='300px' justify='center' mx='auto'>
-                <Stack direction='row' spacing={5} mt={10}   >
+            <Flex w='100%' bg='#272727' h='300px' justify='space-between' >
+                <Stack direction='row' spacing={5} mt={10} w="90%" mx="auto">
+                    <Stack spacing="4" flex="1" align='center' >
+                        <Flex>
+                            <NextImage src={Logo} width={136} height={81} alt="logo" />
+                        </Flex>
+                    </Stack>
                     <Stack spacing="4" flex="1" align='center' >
                         <Text fontSize="md" fontSize='25px' color="secondary">
                             Sitemap

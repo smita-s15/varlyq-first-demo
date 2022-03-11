@@ -7,6 +7,7 @@ import { Art } from '../components/ArtGallery/ArtGallery'
 import { Roadmap } from '../components/Roadmap'
 import { Footer } from '../components/Footer'
 import { FAQ } from '../components/FAQ'
+import { Card } from '../components/Card'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <NavBar />
         <Banner />
         <About />
+        <Card/>
         <Art />
         <Roadmap />
         <FAQ />

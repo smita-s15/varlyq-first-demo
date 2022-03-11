@@ -4,7 +4,7 @@ import bannerRect4 from '../../../public/bannerRect4.png'
 
 export const Art = () => {
     return (
-        <Flex bg="primary" mx='auto' width='70%' direction='column' justify='center' >
+        <Flex bg="primary" mx='auto' width='70%' direction='column' justify='center' mt={10} h='60rem' >
             <Flex  mx='auto' justifyContent='space-between' >
                 <Flex width='48%' >
                     <Box h="480x" w='480px'>
