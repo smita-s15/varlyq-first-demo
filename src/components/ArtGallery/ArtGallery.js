@@ -1,16 +1,19 @@
-import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react"
+import { Box, Button, Flex, Heading, Square, Text } from "@chakra-ui/react"
 import NextImage from 'next/image'
 import bannerRect4 from '../../../public/bannerRect4.png'
 
 export const Art = () => {
     return (
-        <Flex bg="primary" mx='auto' width='70%' direction='column' justify='center' mt={10} h='60rem' >
-            <Flex  mx='auto' justifyContent='space-between' >
+        <Flex bg="primary" mx='auto' width='100%' direction='column' justify='center' mt={10} h='60rem' >
+            <Flex  mx='auto' justifyContent='space-between' width='70%'  >
                 <Flex width='48%' >
                     <Box h="480x" w='480px'>
                         <NextImage src={bannerRect4} w="480" h="480" />
                     </Box>
                 </Flex>
+                <Box w='20%' align='flex-start' position='absolute'   >
+                    <Square style={{ filter: "blur(800px)" }} opacity='0.2' shadow='200px' w='800px' h="800px" bg='#052FC2' position='flex-end' />
+                </Box>
                 <Flex  direction="column" width='48%' >
                     <Heading color='secondary'  > ART GALLERY </Heading>
                     <Box mt={10}  >
