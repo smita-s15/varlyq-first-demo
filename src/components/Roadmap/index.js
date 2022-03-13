@@ -7,36 +7,54 @@ export const Roadmap = () => {
                 <Heading color='secondary' fontSize='40px' fontWeight='bold'  > ROADMAP</Heading>
             </Flex>
             <Divider mt={10} opacity='10%' />
-            <Flex direction='column' width='100%'  mx='auto' justify='space-between'  >
-                <Box mt='-moz-initial' justify='center' width='60%' mx='auto' align='center' >
-                    <Flex justify="center" >
-                        <Flex direction="column" w="400px" >
-                            <Flex justify="flex-end" >
-                                <Flex boxSize="240" borderRight="3px solid #052FC2" borderBottom="3px solid #052FC2" borderBottomRightRadius="90px"  >
-                                </Flex>
-                            </Flex>
-                            <Flex >
-                                <Flex w="200px" h="100px" mt="-3px" borderTop="3px solid #052FC2" borderLeft="3px solid #052FC2" borderTopLeftRadius="90px"  >
-                                </Flex>
+            <Flex direction='column' width='100%' mx='auto' justify='space-between'  >
+                <Flex direction="column" justify='center' mx='auto'  >
+                    <BoxWithBorderInverse />
+                    <Flex direction="column" pos="relative"  >
+                        <DataComponent boxSize='500px' pos="absolute" top="-20px" align="flex-start" textAlign="start" />
+                        <Flex justify="start" py="3">
+                            <Circle w="40px" h="40px" bg='secondary' transform="translateX(-50%)" />
+                        </Flex>
+                        <Flex boxSize="240" borderLeft="3px solid white" borderBottom="3px solid white" borderBottomLeftRadius="50%" >
+                        </Flex>
+                        <Flex justify="flex-end" >
+                            <Flex w="160px" h="100px" mt="-3px" borderTop="3px solid white" borderRight="3px solid white" borderTopRightRadius="90px"  >
                             </Flex>
                         </Flex>
                     </Flex>
-                    <Flex justify="center" w='100%' align='center'>
+
+                    <Flex direction="column" pos="relative" >
+                        <Flex pos="absolute" top="0" right="0" justify="flex-end">
+                            <DataComponent boxSize='600px' align="flex-end" textAlign="end" />
+                        </Flex>
+                        <Flex align="flex-end" direction='column'>
+                            <Flex justify="flex-end" py="3">
+                                <Circle w="40px" h="40px" bg='secondary' transform="translateX(50%)" />
+                            </Flex>
+                            <Flex boxSize="240" borderRight="3px solid white" borderBottom="3px solid white" borderBottomRightRadius="50%" >
+                            </Flex>
+                        </Flex>
+                        <Flex justify="flex-start" >
+                            <Flex w="160px" h="100px" mt="-3px" borderTop="3px solid white" borderLeft="3px solid white" borderTopLeftRadius="90px"  >
+                            </Flex>
+                        </Flex>
+                    </Flex>
+
+                    {/* <Flex justify="center" w='100%' align='center'>
                         <Flex direction="column" w="600px" pos="relative" left="120px" textAlign='left'  >
                             <Circle style={{ filter: "blur(250px)" }} w='400px' h="400px" bg='#052FC2' position='absolute' mt='-80%' ml="-140%" />
                             <Flex direction='row' justify='space-between' ml='-29%' w='450px' align='center' position='relative'  >
                                 <Heading fontSize="5xl" color="white" >10%</Heading>
                                 <Circle w="50px" h="50px" bg='secondary' />
-                                <Heading fontSize="5xl" color="white" >GIVEAWAY</Heading>  
+                                <Heading fontSize="5xl" color="white" >GIVEAWAY</Heading>
                             </Flex>
                             <Flex mt='10px' direction='column' ml='70px'>
                                 <Text mt="2" color="white">During those days, you will have the opportunity to receive $86,000 in gifts to congratulate you for taking action.‍</Text>
                                 <Text mt="2" color="white">In other words, there will be $8,600 in gifts each day, tracked and dispatched depending on the events</Text>
                             </Flex>
                         </Flex>
-                    </Flex>
-                    <BoxWithBorder mt="-136px" />
-                    <Flex justify="center">
+                    </Flex> */}
+                    {/* <Flex justify="center">
                         <Flex direction="column" w="600px" pos="relative" right="120px" textAlign='right'>
                             <Circle style={{ filter: "blur(250px)" }} w='400px' h="400px" bg='#052FC2' position='absolute' ml='170%' />
                             <Flex direction='row' justify='space-between' ml='-29%' w='950px' align='center' position='relative'    >
@@ -49,8 +67,8 @@ export const Roadmap = () => {
                                 <Text mt="2" color="white">Real estate off market deals, access early rounds Sinvestment in startups, angel investing, Launchpad ICOs, IDOs, etc ...</Text>
                             </Flex>
                         </Flex>
-                    </Flex>
-                    <BoxWithBorderInverse mt="-136px" />
+                    </Flex> */}
+                    {/*  <BoxWithBorderInverse mt="-136px" />
                     <Flex justify="center">
                         <Flex direction="column" w="600px" pos="relative" left="120px" textAlign='left'  >
                         <Circle style={{ filter: "blur(250px)" }} w='400px' h="400px" bg='#052FC2' position='absolute'  ml="-140%" />
@@ -182,40 +200,46 @@ export const Roadmap = () => {
                             </Flex>
                         </Flex>
                     </Flex>
-                    <BoxWithBorderInverse mt="-136px" />
-                </Box>
+                    <BoxWithBorderInverse mt="-136px" /> */}
+                </Flex>
             </Flex>
             <Divider />
         </Flex>
     )
 }
 
-
-
 const BoxWithBorder = (props) => {
     const { children, ...rest } = props
     return <Flex justify="center"{...rest} >
         <Flex direction="column" w="400px" >
-            <Flex boxSize="240" borderLeft="3px solid white" borderBottom="3px solid white" borderBottomLeftRadius="50%" opacity='40%' >
+            <Flex boxSize="240" borderLeft="3px solid white" borderBottom="3px solid white" borderBottomLeftRadius="50%" opacity='40%'>
             </Flex>
             <Flex justify="flex-end">
-                <Flex w="200px" h="100px" mt="-3px" borderTop="3px solid white" borderRight="3px solid white" borderTopRightRadius="90px" opacity='40%' >
+                <Flex w="160px" h="100px" mt="-3px" borderTop="3px solid white" borderRight="3px solid white" borderTopRightRadius="90px" opacity='40%' >
                 </Flex>
             </Flex>
         </Flex>
     </Flex>
 }
 const BoxWithBorderInverse = (props) => {
-    return <Flex justify="center"{...props} >
-        <Flex direction="column" w="400px" >
+    return <Flex justify="center" {...props}>
+        <Flex direction="column" minW="400px"   >
             <Flex justify="flex-end" >
-                <Flex boxSize="240" borderRight="3px solid white" borderBottom="3px solid white" borderBottomRightRadius="90px" opacity='40%' >
+                <Flex boxSize="240" borderRight="3px solid white" borderBottom="3px solid white" borderBottomRightRadius="90px" >
                 </Flex>
             </Flex>
             <Flex >
-                <Flex w="200px" h="100px" mt="-3px" borderTop="3px solid white" borderLeft="3px solid white" borderTopLeftRadius="90px" opacity='40%' >
+                <Flex w="160px" h="100px" mt="-3px" borderTop="3px solid white" borderLeft="3px solid white" borderTopLeftRadius="90px" >
                 </Flex>
             </Flex>
         </Flex>
     </Flex>
 }
+
+const DataComponent = (props) => <Flex direction="column" p="10" {...props}>
+    <Heading fontSize="5xl" color="white" >GIVEAWAY</Heading>
+    <Flex mt='10px' direction='column' >
+        <Text mt="2" color="white">During those days, you will have the opportunity to receive $86,000 in gifts to congratulate you for taking action.‍</Text>
+        <Text mt="2" color="white">In other words, there will be $8,600 in gifts each day, tracked and dispatched depending on the events</Text>
+    </Flex>
+</Flex>

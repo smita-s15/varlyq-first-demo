@@ -19,15 +19,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Flex  direction='column' justify='center' align='center' bg='primary' mx='auto' w='100%'>
-        <NavBar />
+        {/* <NavBar />
         <Banner />
         <About />
         <Card/>
-        <Art />
+        <Art /> */}
         <Roadmap />
-        <CreateNFT/>
+        {/* <CreateNFT/>
         <FAQ />
-        <Footer />
+        <Footer /> */}
       </Flex>
       
     </div>
