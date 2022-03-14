@@ -23,16 +23,16 @@ export const CreateNFT = () => {
             <Stack direction='row' w='60%'  justify='space-between' spacing={20} mt={20}>
                     {NFTArr.map((item, index) => <NFTCard key={index} image={item.image} title={item.title} ether={item.ether} />)}
             </Stack>
-            <Stack direction='row' justify='space-between' spacing={10} align='center' mt={20}>
-                <Button bg='#052FC2' color='secondary' p={2} w='186px' h='55px' borderRadius={20} shadow={1} mt={10} fontSize='15px' >Create</Button>
-                <Button  bg='transparent' color='white' borderColor='secondary' border='1px' p={2} w='186px' h='55px' borderRadius={20} shadow={1} mt={10} fontSize='15px'>Watch Video</Button>
+            <Stack direction='row' justify='space-between' spacing={10}  mt={20}>
+                <Button bg='#052FC2' color='secondary' p={2} w='186px' h='55px' borderRadius={20} fontSize='15px' >Create</Button>
+                <Button  bg='transparent' color='white' p={2} w='186px' h='55px'  borderRadius={20} fontSize='15px' border='1px solid white' >Watch Video</Button>
             </Stack>
            
             <Flex w="100%" direction='column' justify="center" my="20" mx='auto' align='center'  >
                 <Text fontWeight='bold' fontSize='20px' mt={20} color='#9C00E8' >How to be a creator</Text>
                 <Heading mt={10} fontSize='40px' color='secondary' >Create and Sell your NFTs </Heading>
 
-                <SimpleGrid columns={3} spacing="10" alignItems='center' mt={20} >
+                <SimpleGrid columns={{base:'2', xl:'3'}} spacing="10" alignItems='center' mt={20} >
                     {CardArr.map((item, index) => <NFTComponent key={index} image={item.image} title={item.title} ether={item.ether} />)}
                 </SimpleGrid>
 

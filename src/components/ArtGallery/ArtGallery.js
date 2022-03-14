@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Square, Text } from "@chakra-ui/react"
+import { Box, Button, Flex, Heading, Text, Circle } from "@chakra-ui/react"
 import NextImage from 'next/image'
 import bannerRect4 from '../../../public/bannerRect4.png'
 
@@ -11,13 +11,19 @@ export const Art = () => {
                         <NextImage src={bannerRect4} w="480" h="480" />
                     </Box>
                 </Flex>
-                <Box w='20%' align='flex-start' position='absolute'   >
-                    <Square style={{ filter: "blur(800px)" }} opacity='0.2' shadow='200px' w='800px' h="800px" bg='#052FC2' position='flex-end' />
-                </Box>
                 <Flex  direction="column" width='48%' >
-                    <Heading color='secondary'  > ART GALLERY </Heading>
+                    <Circle 
+                        style={{ filter: "blur(230px)" }} 
+                        w='400px' 
+                        h="400px" 
+                        bg='#052FC2' 
+                        position='absolute' 
+                        ml='-20%'  
+                        mb='-10%'
+                    /> 
+                    <Heading color='secondary' fontWeight='bold' fontSize={{base:'40px' ,'2xl':'60px', '3xl':'60px'}}  > ART GALLERY </Heading>
                     <Box mt={10}  >
-                        <Text color='secondary' fontSize='20px' >
+                        <Text color='secondary' fontSize={{base:'15px', md:'15px','2xl':'30px' ,'3xl':'30px'}} >
                             At a very high level, most NFTs are part of the Ethereum blockchain. Ethereum is a cryptocurrency, like bitcoin or dogecoin, but its blockchain also supports these NFTs, which store extra information that makes them work differently from, say, an ETH coin. It is worth noting that other blockchains can implement their own versions of NFTs.
                         </Text>
                     </Box>

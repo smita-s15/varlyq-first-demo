@@ -15,7 +15,7 @@ export const Card = () => {
         <Flex w="100%" justify="center" direction='column' mx='auto' align='center' >
             <Text color='#9C00E8' >NFT MARKETPLACE</Text>
             <Heading mt={10} fontSize='40px' color='secondary' >Hot Drops </Heading>
-            <Flex textColor='#2A5AFA' justifyContent='space-between' width='80%' mt={20} align='center' fontSize='18px'>
+            <Flex textColor='#2A5AFA' justifyContent='space-between' width='80%' mt={20} align='center' fontSize={{base:'5px',md:'10px','3xl':'18px'}}>
                 <Link p='10px 25px' borderRadius={15} bg='#061033' > Music</Link>
                 <Link p='10px 25px' borderRadius={15} bg='#061033'> Sports </Link>
                 <Link p='10px 25px' borderRadius={15} bg='#061033'> Arts </Link>
@@ -25,10 +25,10 @@ export const Card = () => {
                 <Link p='10px 25px' borderRadius={15} bg='#061033'> Videos </Link>
                 <Link p='10px 25px' borderRadius={15} bg='#061033'> More</Link>
             </Flex>
-            <Flex w="100%" justify="center" py="10" mt={10} >
-                <SimpleGrid columns={4} spacing="10" >
+            <Flex w="100%" justify="center" py="10" mt={10}  >
+                <SimpleGrid columns={{xl:'4', md:'2'}} spacing="10" >
                     {CardArr.map((item, index) =>
-                        <Flex key={index}>
+                        <Flex key={index} >
                             <CardComponent image={item.image} title={item.title} desc={item.desc} ether={item.ether} etherImage={item.etherImage} />
                         </Flex>
                     )}

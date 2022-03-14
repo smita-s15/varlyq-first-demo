@@ -18,11 +18,12 @@ const colors = {
 }
 
 const breakpoints = createBreakpoints({
-    sm: '30em',
-    md: '48em',
-    lg: '62em',
-    xl: '80em',
-    '2xl': '96px',
+    sm: '320px',
+    md: '768px',
+    lg: '960px',
+    xl: '1200px',
+    '2xl': '1536px',
+    '3xl' : '1980px'
 })
 
 const overrides = {
@@ -36,16 +37,13 @@ const overrides = {
         bold: 700,
     },
     fontSizes : {
-        xs: "12px",
-        sm: "14px",
-        md: "16px",
-        lg: "18px",
-        xl: "20px",
-        "2xl": "24px",
-        "3xl": "28px",
-        "4xl": "36px",
-        "5xl": "40px",
-        "6xl": "64px",
+        sm : "24px",
+        md: "28px",
+        lg: "36px",
+        xl: "40px",
+        "2xl": "64px",
+        "3xl": "90px",
+        "4xl": "120px"
     }
     
 }

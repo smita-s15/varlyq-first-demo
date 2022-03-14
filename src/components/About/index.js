@@ -5,15 +5,21 @@ import { Circle } from "@chakra-ui/react"
 
 export const About = () => {
     return (
-        <Flex bg="primary" mx='auto' w='80%' direction='column' >
+        <Flex bg="primary" mx='auto' w='80%' direction='column' mt={20} >
+            <Circle 
+                style={{ filter: "blur(230px)" }} 
+                w='400px' 
+                h="400px" 
+                bg='#052FC2' 
+                position='absolute' 
+                ml='-10%'  
+                mt='-10%'
+            /> 
             <Flex h="50rem" justify='center' >
                 <Flex w="48%" direction="column" mt={10}>
-                    <Box w='20%' align='flex-start' position='absolute'   >
-                        <Circle style={{ filter: "blur(600px)" }} opacity='0.3' shadow='200px' w='800px' h="800px" bg='#052FC2' position='flex-end' mt={-50} ml={-100} />
-                    </Box>
-                    <Heading color='secondary' fontWeight='40px' fontWeight='bold'> ABOUT US </Heading>
+                    <Heading color='secondary' fontSize={{base:'40px', '2xl':'60px', '3xl':'60px'}} fontWeight='bold'> ABOUT US </Heading>
                     <Box mt={10} width='80%' >
-                        <Text color='secondary' fontSize='20px' >
+                        <Text color='secondary' fontSize={{base:'10px',md:'15px','2xl':'30px' ,'3xl':'30px'}} >
                             At a very high level, most NFTs are part of the Ethereum blockchain. Ethereum is a cryptocurrency, like bitcoin or dogecoin, but its blockchain also supports these NFTs, which store extra information that makes them work differently from, say, an ETH coin. It is worth noting that other blockchains can implement their own versions of NFTs.
                         </Text>
                     </Box>

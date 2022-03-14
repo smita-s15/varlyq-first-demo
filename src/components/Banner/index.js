@@ -10,26 +10,69 @@ export const Banner = () => {
     const [isNotSmallerScreen] = useMediaQuery("min-width:600px")
 
     return (
-        <Flex w="100%" justify='center' mt='70px' mx='auto' align='center' >
-                <Circle style={{ filter: "blur(250px)" }} 
-                w='400px' h="400px" bg='#052FC2' position='flex-end' mt='-50%' ml={-40} /> 
-            <Flex h="55rem"  bg="primary"   w="60%" mx="auto" mt='5px' >
-                <Heading fontSize="85px" color='white' display="inline" align='center'>DISCOVER
-                    <Box display="inline-flex" ml="5" transform="translateY(30%)">
-                        <NextImage src={bannerRect} h="100px" w="50px" />
-                    </Box> COLLECT AND SALE RARE
-                    <Box display="inline-flex" ml="5" mt={10} transform="translateY(30%)">
-                        <NextImage src={bannerRect2} h="100px" w="50px" />
+        <Flex 
+            w="100%" 
+            justify='center'  
+            mx='auto' 
+            h='55rem' 
+            align='center' 
+            mt={{base:'00%', sm:'-25%', md:'-20%', lg:'-25%', '2xl':'-10%', '3xl':'2%' }} >
+            
+            <Flex   
+                bg="primary" 
+                align='center'  
+                w="70%" 
+                mx="auto" 
+                justify='center'  >
+                
+                <Circle 
+                    style={{ filter: "blur(230px)" }} 
+                    w='400px' 
+                    h="400px" 
+                    bg='#052FC2' 
+                    position='absolute' 
+                    mr='80%' 
+                    mt='-30%' 
+                /> 
+                <Heading 
+                    fontSize={{base:'10px', md:'lg', lg:'xl', xl:'2xl', '2xl':'3xl', '3xl':'4xl' }} 
+                    color='white' 
+                    display="inline" 
+                    align='center'  
+                >
+                    DISCOVER 
+                    <Box 
+                        display="inline-flex"  
+                        transform="translateY(30%)"   >
+                      
+                        <NextImage src={bannerRect} h="50px"  w="50px" />
+                    </Box>                   
+                    COLLECT 
+                    <br/>
+                    AND SALE RARE                    
+                    <Box 
+                        display="inline-flex"   
+                        transform="translateY(30%)">
+                        <NextImage src={bannerRect2} h='50px'  w="50px" />
                     </Box>
-                    <Box display="inline-flex" mr="20" transform="translateY(65%)">
-                        <NextImage src={bannerRect3} h="100px" w="50px" />
+                    <br />
+                    <Box 
+                        display="inline-flex"  
+                        transform="translateY(65%)" 
+                        mt='-5%'>
+                        <NextImage src={bannerRect3}  h='50px' w="50px" />
                     </Box>
                     NFTS
                 </Heading>   
+                <Circle 
+                    style={{ filter: "blur(230px)" }} 
+                    w='400px' h="400px" 
+                    bg='#052FC2' 
+                    position='absolute' 
+                    ml={{ md:'40%', lg:'50%', 'xl':'60%'  ,'3xl':'75%'}} 
+                    mb='-30%'  
+                /> 
             </Flex>
-                <Box w='20%' align='flex-start' >
-                    <Circle style={{ filter: "blur(600px)" }} opacity='0.2' shadow='200px' w='500px' h="500px" bg='#052FC2' position='absolute' />
-                </Box>   
         </Flex>
     )
 }
