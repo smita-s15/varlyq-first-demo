@@ -13,17 +13,17 @@ export const Art = () => {
                 </Flex>
                 <Flex  direction="column" width='48%' >
                     <Circle 
-                        style={{ filter: "blur(230px)" }} 
-                        w='400px' 
-                        h="400px" 
+                        style={{ filter: "blur(290px)" }} 
+                        w='350px' 
+                        h="350px" 
                         bg='#052FC2' 
                         position='absolute' 
                         ml='-20%'  
                         mb='-10%'
                     /> 
-                    <Heading color='secondary' fontWeight='bold' fontSize={{base:'40px' ,'2xl':'60px', '3xl':'60px'}}  > ART GALLERY </Heading>
+                    <Heading color='secondary' fontWeight='bold' fontSize={{base:'30px','2xl':'60px'}}  > ART GALLERY </Heading>
                     <Box mt={10}  >
-                        <Text color='secondary' fontSize={{base:'15px', md:'15px','2xl':'30px' ,'3xl':'30px'}} >
+                        <Text color='secondary' fontSize={{base:'15px', md:'15px','2xl':'25px'}} >
                             At a very high level, most NFTs are part of the Ethereum blockchain. Ethereum is a cryptocurrency, like bitcoin or dogecoin, but its blockchain also supports these NFTs, which store extra information that makes them work differently from, say, an ETH coin. It is worth noting that other blockchains can implement their own versions of NFTs.
                         </Text>
                     </Box>

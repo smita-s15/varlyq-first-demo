@@ -23,7 +23,7 @@ const breakpoints = createBreakpoints({
     lg: '960px',
     xl: '1200px',
     '2xl': '1536px',
-    '3xl' : '1980px'
+    '2xl' : '1980px'
 })
 
 const overrides = {
@@ -37,13 +37,12 @@ const overrides = {
         bold: 700,
     },
     fontSizes : {
+        xs: "15px",
         sm : "24px",
         md: "28px",
         lg: "36px",
         xl: "40px",
         "2xl": "64px",
-        "3xl": "90px",
-        "4xl": "120px"
     }
     
 }

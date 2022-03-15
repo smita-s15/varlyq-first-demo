@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, SimpleGrid, Text, Link } from "@chakra-ui/react"
+import { Button, Flex, Heading, SimpleGrid, Text, Link, Circle, Box } from "@chakra-ui/react"
 import NextImage from 'next/image'
 import RectOne from '../../../public/rect.png'
 import Rect2 from '../../../public/Rect2.png'
@@ -9,21 +9,35 @@ import Rect6 from '../../../public/Rect6.png'
 import Rect7 from '../../../public/Rect7.png'
 import Rect8 from '../../../public/Rect8.png'
 import EtherIamge from '../../../public/ether.png'
+import fire from '../../../public/fire.png'
+import NextLink from 'next/link'
 
 export const Card = () => {
     return (
         <Flex w="100%" justify="center" direction='column' mx='auto' align='center' >
-            <Text color='#9C00E8' >NFT MARKETPLACE</Text>
-            <Heading mt={10} fontSize='40px' color='secondary' >Hot Drops </Heading>
-            <Flex textColor='#2A5AFA' justifyContent='space-between' width='80%' mt={20} align='center' fontSize={{base:'5px',md:'10px','3xl':'18px'}}>
-                <Link p='10px 25px' borderRadius={15} bg='#061033' > Music</Link>
-                <Link p='10px 25px' borderRadius={15} bg='#061033'> Sports </Link>
-                <Link p='10px 25px' borderRadius={15} bg='#061033'> Arts </Link>
-                <Link p='10px 25px' borderRadius={15} bg='#061033'> Photography</Link>
-                <Link p='10px 25px' borderRadius={15} bg='#061033'>Trading Card</Link>
-                <Link p='10px 25px' borderRadius={15} bg='#061033'>Virtual World</Link>
-                <Link p='10px 25px' borderRadius={15} bg='#061033'> Videos </Link>
-                <Link p='10px 25px' borderRadius={15} bg='#061033'> More</Link>
+            <Circle 
+                style={{ filter: "blur(290px)" }} 
+                w='350px' 
+                h="350px" 
+                bg='#052FC2' 
+                position='absolute' 
+                ml='50%' 
+                mt='-90%' 
+            /> 
+            <Flex direction='row' align='center' justify='space-between' mx='auto' w='15%' >
+                <Text color='#9C00E8' fontSize='30px' fontWeight='extrabold' >NFT   </Text>
+                <Text mt='7px' color='#9C00E8' fontSize='20px' fontWeight='bold'>MARKETPLACE</Text>
+            </Flex>
+            <Heading mt={10} fontSize={{base:'40px' ,'2xl':'60px'}} color='secondary' >
+                Hot Drops  <span />
+            <NextImage src={fire} />
+            </Heading>
+            <Flex textColor='#2A5AFA' justifyContent='space-between' width='80%' mt={20} align='center' fontSize={{base:'5px',md:'10px','2xl':'18px'}}>
+                {ExploreArr?.map((item, index) => {
+                    return <NextLink key={index} href={item.link} passHref>
+                        <Link p='5px 15px' borderRadius={15} bg='#061033' color="navLinkColor">{item.title}</Link>
+                    </NextLink>
+                })}
             </Flex>
             <Flex w="100%" justify="center" py="10" mt={10}  >
                 <SimpleGrid columns={{xl:'4', md:'2'}} spacing="10" >
@@ -38,6 +52,40 @@ export const Card = () => {
         </Flex>
     )
 }
+const ExploreArr = [
+    {
+        link: "#",
+        title: "Music"
+    },
+    {
+        link: "#",
+        title: "Sports"
+    },
+    {
+        link: "#",
+        title: "Arts"
+    },
+    {
+        link: "#",
+        title: "Community"
+    },
+    {
+        link: "#",
+        title: "Trading Card"
+    },
+    {
+        link: "#",
+        title: "Virtual World"
+    },
+    {
+        link: "#",
+        title: "Videos"
+    },
+    {
+        link: "#",
+        title: "More"
+    },
+]
 
 const CardArr = [
     {
