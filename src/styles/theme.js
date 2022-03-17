@@ -1,9 +1,8 @@
-import { chakra, extendTheme } from '@chakra-ui/react'
+import { extendTheme, theme } from '@chakra-ui/react'
 import chakraUiTheme from '@chakra-ui/theme'
 import { createBreakpoints } from '@chakra-ui/theme-tools'
 
 
-    
 const fonts = {
     ...chakraUiTheme.fonts,
     heading: 'Cinzel',
@@ -16,6 +15,7 @@ const colors = {
     navLinkColor: "#AFAFB1",
     borderColor:  "#052FC2"
 }
+
 
 const breakpoints = createBreakpoints({
     sm: '320px',
@@ -41,10 +41,10 @@ const overrides = {
         sm : "24px",
         md: "28px",
         lg: "36px",
-        xl: "40px",
-        "2xl": "64px",
+        xl: "40px",2
+        "2xl": "64px"
     }
     
 }
-const customTheme = extendTheme(overrides)
+const customTheme = extendTheme(overrides);
 export default customTheme
