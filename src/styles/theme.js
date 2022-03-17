@@ -8,6 +8,7 @@ const fonts = {
     ...chakraUiTheme.fonts,
     heading: 'Cinzel',
     body: 'Heebo',
+    nav : 'Heebo',
 }
 const colors = {
     primary: "#040006",
@@ -23,7 +24,6 @@ const breakpoints = createBreakpoints({
     lg: '960px',
     xl: '1200px',
     '2xl': '1536px',
-    '2xl' : '1980px'
 })
 
 const overrides = {
