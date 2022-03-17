@@ -3,6 +3,8 @@ import {
   Accordion, AccordionButton, AccordionItem, AccordionPanel, Box,
   Flex, Heading, Text, Circle, Button
 } from '@chakra-ui/react'
+import vector1 from '../../../public/vector1.png'
+import NextImage from 'next/image'
 
 export const FAQ = () => {
   return (
@@ -35,7 +37,7 @@ export const FAQ = () => {
                         <AddIcon fontSize='12px' />
                       )}
                     </AccordionButton>
-                  <AccordionPanel pb={4}>
+                  <AccordionPanel pb={4}  textAlign='left'>
 
                     {item.desc.map((des, keyIndex) => <Text key={keyIndex}>{des}</Text>)}
                   </AccordionPanel>
@@ -48,20 +50,30 @@ export const FAQ = () => {
       </Box>
       <Circle 
         style={{ filter: "blur(300px)" }} 
-        w='300px' h="400px" 
+        w='300px' h="300px" 
         bg='#052FC2' 
         position='absolute' 
         ml={{ md:'40%', lg:'50%', 'xl':'60%'  ,'2xl':'75%'}} 
         mb='-30%'  
       /> 
-        <Flex bg='primary' w='100%' mx='auto' direction='column' mt={5}  >
-        <Box direction='column'  w='60%' bg='rgba(39, 39, 39, 0.6)'  mx='auto'  p='100px' borderRadius="23px" mb="20" align="center" >
-            <Flex color='secondary' direction='column' align='center' mt={20}  >
-                <Heading mt='-10%' fontSize={{base:'40px' ,'2xl':'60px'}}> Join Our Community </Heading>
+        <Flex bg='primary' w='100%' mx='auto' direction='column' mt='5%'  >
+        <Box ml='63%' mt='50px' position='absolute' >
+            <NextImage src={vector1}   />
+        </Box>          
+        <Flex direction='column'  w='60%' bg='rgba(39, 39, 39, 0.6)'  mx='auto'  p='100px' borderRadius="23px" mb="20" align="center"  >
+            <Flex color='secondary' direction='column' align='center' mt="10px" position='relative'  >
+
+                <Heading mt='-10%' fontSize={{base:'40px' ,'2xl':'60px'}} textAlign='center' > Join Our Community </Heading>
+                
                 <Text  mt={10} fontSize='20px'>At a very high level, most NFTs are part of the Ethereum blockchain.</Text>
-                <Button mt={10} bg='#052FC2' color='secondary' p={2} w='186px' h='55px' borderRadius={20} shadow={1} fontSize='15px'>Launch Discord</Button>
+                
+                <Button bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 130%, #052FC2 10%   )'   w='186px' h='55px' borderRadius={20} shadow={5} mt={10} fontSize='15px'>
+                <Text color='secondary'fontSize='20px' >
+                  Launch Discord
+                </Text> 
+            </Button>
             </Flex>
-        </Box>
+        </Flex>
             <Box w='20%' align='flex-start' position='absolute' ml={-10}  >
                 <Circle style={{ filter: "blur(600px)" }} opacity='0.1' shadow='10px' w='500px' h="500px" bg='#052FC2' position='flex-end' ml='1px' />
             </Box>

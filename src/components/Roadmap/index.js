@@ -68,7 +68,7 @@ const arr = [
             text2="In other words, there will be $8,600 in gifts each day, tracked and dispatched depending on the events" 
         />,
         percentForComponentTwo: "20%",
-        DataComponentTwo: <DataComponent w={{ base: "450px", md: "500px", xl:'800px' }} pos="absolute" top="-10px" align="flex-end" textAlign="end" 
+        DataComponentTwo: <DataComponent w={{ base: "450px", md: "500px", xl:'800px' }} pos="absolute" top="-20px" align="flex-end" textAlign="end" 
             heading="SECRET AND PRIVATE INVESTMENT" 
             text1="Get into the system and gain access to private and secret investment opportunities :" text2="Real estate off market deals, access early rounds investment in startups, angel investing, Launchpad ICOs, IDOs, etc ..." 
         />
@@ -82,7 +82,7 @@ const arr = [
             text4="Many others will take place virtually through masterminds on Zoom or directly in the Metaverse ! " 
         />,
         percentForComponentTwo: "40%",
-        DataComponentTwo: <DataComponent w={{ base: "450px", md: "450px", xl:'700px' }} pos="absolute" top="-10px" align="flex-end" textAlign="end" 
+        DataComponentTwo: <DataComponent w={{ base: "450px", md: "500px", xl:'700px' }} pos="absolute" top="-20px"  align="flex-end" textAlign="end" 
             heading="CHARITY"  
             text1= "In the hope of seeing the accomplishment of other children to whom NOTHING encourages their success :" 
             text2= "$50,000 as well as 10% of our royalties will be donated to the association 27-12 & Motema Foundation in Ivory Coast to help children with childhood illnesses and perhaps save the world of tomorrow once again."  
@@ -97,7 +97,7 @@ const arr = [
             text3= "Join those who change the world, who fulfill their destiny."  
         />,
         percentForComponentTwo: "60%",
-        DataComponentTwo: <DataComponent w={{ base: "450px", md: "500px", xl:'800px'  }}  pos="absolute" top="-10px" align="flex-end" textAlign="end" 
+        DataComponentTwo: <DataComponent w={{ base: "450px", md: "500px", xl:'800px'  }}  pos="absolute" top="-20px"  align="flex-end" textAlign="end" 
             heading= "SPONSORSHIPS"
             text1= "We will be sponsoring the most exclusive events : concerts, international fights, masterminds and many others."
             text2= "The Cyborg 86 community will not only control the metaverse but will have a real influence, in the real world."
@@ -113,7 +113,7 @@ const arr = [
             text3= "Crypto, NFT, Metaverse, etc ..."
          />,
         percentForComponentTwo: "80%",
-        DataComponentTwo: <DataComponent w={{ base: "450px", md: "570px", xl:'800px'  }} pos="absolute" top="-10px" align="flex-end" textAlign="end" 
+        DataComponentTwo: <DataComponent w={{ base: "450px", md: "500px", xl:'800px'  }} pos="absolute" top="-20px" align="flex-end" textAlign="end" 
         heading= "$1,000,000 IN REWARDS FOR OUR HOLDERS"
             text1= "Every member of the system is an asset. And each asset has its interest to claim."
             text2= "This is why the holders will benefit over $1,000,000 of reward through the 8,600 cards."
@@ -123,14 +123,14 @@ const arr = [
     },
     {
         percentForComponentOne: "90%",
-        DataComponentOne: <DataComponent w={{ base: "450px", md: "600px", xl:'800px' }} pos="absolute" top="-25px"  align="flex-start" textAlign="start" 
+        DataComponentOne: <DataComponent w={{ base: "450px", md: "500px", xl:'750px' }} pos="absolute" top="-25px"  align="flex-start" textAlign="start" 
             heading= "UNIQUE HEADQUARTERS IN THE METAVERSE"
             text1= "An application has been submitted to the elite House of Kibaa to be with B.A.Y.C and the Gutters Cat Gang."
             text2= "The goal is to be among the first projects to have a plot in the Metaverse within their ecosystem."
             text3= "If so, we will get land on Sandbox which will become the ideal place to establish our new base."
         />,
         percentForComponentTwo: "100%",
-        DataComponentTwo: <DataComponent w={{ base: "350px", md: "500px", xl:'800px' }} pos="absolute" top="-10px" align="flex-end" textAlign="end" 
+        DataComponentTwo: <DataComponent w={{ base: "350px", md: "500px", xl:'750px' }} pos="absolute" top="-20px"  align="flex-end" textAlign="end" 
             heading= "BRAIN 3.0 - THE REVOLUTION STARTS NOW"
             text1= "This information is confidential for now. "
             text2= "All we can share with you is that our team is currently developing our own P2E game."

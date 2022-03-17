@@ -12,23 +12,23 @@ export const SeccondComponent = ({ children, percent }) => {
                     h="350px" 
                     bg='#052FC2' 
                     position='absolute' 
-                    ml={{base:'40%',md:'50%',lg:'90%', xl:'110%'}} 
+                    ml={{base:'40%',md:'60%',lg:'80%', xl:'120%', '2xl':'200%'}} 
                     mt='-60%' 
                 /> 
             <Flex align="flex-end" direction='column'>
                 <Flex direction='column' transform="translateX(88%)" >
-                    <Flex py="3" align="center">
-                        <Circle w="40px" h="40px" bg='secondary' />
-                        <Text ml="5" color="white" fontSize={{ base: "xl", md: "5xl" }}>
+                    <Flex py="3" align="center" mr={{base:'55px', md:'45px',lg:'33px'}} fontSize={{base:'20px', md: "25px", lg:'30px' }}>
+                        <Circle w="40px" h="40px" bg='secondary'  />
+                        <Text ml="5" color="white" >
                             {percent}
                         </Text>
                     </Flex>
                 </Flex>
-                <Flex boxSize="240" borderRight="3px solid white" borderBottom="3px solid white" borderBottomRightRadius="50%" opacity='0.2' >
+                <Flex boxSize="240" borderRight="3px solid #052FC2" borderBottom="3px solid #052FC2" borderBottomRightRadius="50%"  >
                 </Flex>
             </Flex>
             <Flex justify="flex-start" >
-                <Flex w="160px" h="100px" mt="-3px" borderTop="3px solid white" borderLeft="3px solid white" borderTopLeftRadius="90px" opacity='0.2' >
+                <Flex w="160px" h="100px" mt="-3px" borderTop="3px solid #052FC2" borderLeft="3px solid #052FC2" borderTopLeftRadius="90px"  >
                 </Flex>
             </Flex>
         </Flex>

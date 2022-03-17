@@ -8,7 +8,7 @@ export const Footer = () => {
     return (
         <>
         <Flex w='100%' bg='#272727' direction='column' >
-            <Flex  h='350px' justify='space-between' >
+            <Flex  h='300px' justify='space-between' >
                 <Stack direction='row' spacing='5%' mt={10} w="80%" mx="auto">
                     <Stack spacing="4" flex="1" align='center' >
                         <Flex>
@@ -55,7 +55,7 @@ export const Footer = () => {
                     </Stack>
                 </Stack>
             </Flex>
-            <Flex w='100%' bg='#272727' h='200px' justify='center' mx='auto' mt='20px' fontSize={{ sm: '20px', xl: '24px' }} >
+            <Flex w='100%' bg='#272727' h='100px' justify='center' mx='auto' mt='20px' fontSize={{ sm: '20px', xl: '24px' }} >
                 <Stack direction='row' spacing='10%'  width='80%' justifyContent='space-between' align='center' >
                     <Stack spacing={5}>
                         <Text color='white' >contact@lift.agency </Text>
