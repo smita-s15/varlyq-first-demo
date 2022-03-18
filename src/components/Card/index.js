@@ -15,7 +15,7 @@ import NextLink from 'next/link'
 
 export const Card = () => {
     return (
-        <Flex w="100%" bg='primary' justify="center" direction='column' mx='auto' align='center'  >
+        <Flex w="100%" mt={{base:'-40px', md:'-30%', lg:'-10%', xl:'25px'}} bg='primary' justify="center" direction='column' mx='auto' align='center'  >
             <Circle 
                 style={{ filter: "blur(290px)" }} 
                 w='350px' 
@@ -23,22 +23,30 @@ export const Card = () => {
                 bg='#052FC2' 
                 position='absolute' 
                 ml='50%' 
-                mt='-90%' 
+                mt={{base:'10px', md:'-30px', lg:'-50px',xl:'-90%' }}
             /> 
-            <Flex direction='row' align='flex-end' justify='space-around' mx='auto' w='13%' >
-                <Text color='#9C00E8' fontSize='20px' fontWeight='extrabold' >NFT   </Text>
-                <Text color='#9C00E8' fontSize='18px' fontWeight='normal'>MARKETPLACE</Text>
+            <Flex direction='row' align='center' justify='center'  mx='auto' w='13%' >
+                <Heading color='#9C00E8' fontSize='20px' fontWeight='extrabold' >Nft   </Heading>
+                <Text color='transparent'>..</Text>
+                <Heading color='#9C00E8' fontSize='18px' fontWeight='normal'>Marketplace</Heading>
             </Flex>
-            <Heading  fontSize={{base:'40px' ,'2xl':'60px'}} color='secondary'>
-                Hot Drops <span />
+            <Text  
+                fontSize='38px' 
+                fontWeight='700'
+                color='secondary'
+                align='center'
+                as='h1'
+                letterSpacing='6%'
+            >
+                Hot Drops 
                 <NextImage src={fire} />
-            </Heading>
-            <Flex  justifyContent='space-between' width='80%' mt='70px' align='center'                   
+            </Text>
+            <Flex  justifyContent='center' width='80%' mt='62px' align='center'                   
             >
                 {ExploreArr?.map((item, index) => {
                     return <NextLink key={index} href={item.link} passHref>
-                        <Link p='10px 25px' borderRadius={15} bg='#061033'  color="navLinkColor">
-                            <Text  fontSize='14px'color='#2A5AFA'>  
+                        <Link  p={{md:'5px 10px',xl:"10px 25px"}}  mx='auto' justify='center'  borderRadius={15} bg='#061033'  color="navLinkColor">
+                            <Text  fontSize='14px'color='#2A5AFA'  >  
                                 {item.title}
                             </Text>
                         </Link>
@@ -46,7 +54,7 @@ export const Card = () => {
                 })}
             </Flex>
             <Flex w="100%" justify="center" py="10" mt={10}  >
-                <SimpleGrid columns={{xl:'4', md:'2'}} spacing="20" >
+                <SimpleGrid columns={{ md:'2', lg:'3',xl:'4'}} spacing="20" >
                     {CardArr.map((item, index) =>
                         <Flex key={index} >
                             <CardComponent image={item.image} title={item.title} desc={item.desc} ether={item.ether} etherImage={item.etherImage} />
@@ -54,8 +62,23 @@ export const Card = () => {
                     )}
                 </SimpleGrid>
             </Flex>
-            <Button bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 110%, #052FC2 10%   )'   p={5} w='186px' h='55px' borderRadius={20} shadow={5} mt={10} fontSize='15px'>
-                <Text color='secondary'fontSize='25px' >
+            <Button 
+                bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 110%, #052FC2 10%   )'   
+                p={5} 
+                w={{base:'100px',md:'150px',lg:'150px',xl:'186px'}}
+                h={{base:'40px',md:'45px',lg:'50px',xl:'55px'}} 
+                fontSize={{base:'10px',md:'14px',lg:'18px'}}  
+                borderRadius={20} mt={10} 
+                box-shadow='4px 38px 62px'
+                fontWeight='500'
+                letterSpacing={2}
+                variant='link'
+                _focus='transparent'
+            >
+                <Text 
+                    fontSize='18px'
+                    letterSpacing='50%'
+                    color='secondary'  >
                     View More
                 </Text> 
             </Button>

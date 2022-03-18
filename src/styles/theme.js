@@ -1,13 +1,15 @@
 import { extendTheme, theme } from '@chakra-ui/react'
 import chakraUiTheme from '@chakra-ui/theme'
 import { createBreakpoints } from '@chakra-ui/theme-tools'
+import "@fontsource/heebo/500.css"
+import "@fontsource/heebo/700.css"
+import "@fontsource/cinzel/700.css"
 
 
 const fonts = {
     ...chakraUiTheme.fonts,
     heading: 'Cinzel',
-    body: 'Heebo',
-    nav : 'Heebo',
+    body:'Heebo',
 }
 const colors = {
     primary: "#040006",
@@ -41,7 +43,7 @@ const overrides = {
         sm : "24px",
         md: "28px",
         lg: "36px",
-        xl: "40px",2
+        xl: "40px",
         "2xl": "64px"
     }
     

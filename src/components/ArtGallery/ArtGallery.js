@@ -4,20 +4,31 @@ import bannerRect4 from '../../../public/bannerRect4.png'
 
 export const Art = () => {
     return (
-        <Flex bg='primary' mt='20%' mx='auto' width='80%' direction='row' justify='space-between' alignContent='center' h='40rem' >
-            <Box h='480px' w='480px' borderRadius={20}  >
-                <NextImage src={bannerRect4} />
+        <Flex bg='primary' mt='15%' mx='auto' width='80%' direction='row' justify='space-between' alignContent='center' h='35rem' >
+            <Box 
+                h={{base:'100px', md:'250px', lg:'350px', xl:'480px'}} 
+                w={{base:'100px', md:'250px', lg:'350px', xl:'480px'}} 
+                borderRadius={20}  
+            >
+                <NextImage src={bannerRect4} layout='responsive' />
             </Box>
-        <Flex mt={-5} width='40%' direction='column' >
+        <Flex 
+            width='40%' 
+            mt={-5} 
+            h={{base:'100px', md:'250px', lg:'350px', xl:'480px'}} 
+            w={{base:'100px', md:'250px', lg:'350px', xl:'480px'}}
+            direction='column'
+            direction='column' 
+        >
             <Heading 
                 color='secondary' 
-                fontSize='40px'
+                fontSize={{base:'20px',md:'20px',lg:'30px',xl:'40px'}}
                 fontWeight='700'
             > 
-                ART GALLERY 
+                Art Gallery 
             </Heading>
             <Circle 
-                style={{ filter: "blur(290px)" }} 
+                style={{ filter: "blur(230px)" }} 
                 w='350px' 
                 h="350px" 
                 bg='#052FC2' 
@@ -28,7 +39,7 @@ export const Art = () => {
             <Box mt={10}  >
                 <Text 
                     color='secondary' 
-                    fontSize='20px'
+                    fontSize={{base:'10px',md:'10px',lg:'18px',xl:'20px'}}
                     mt='40px'
                 >
                     At a very high level, most NFTs are part of the Ethereum blockchain. Ethereum is a cryptocurrency, like bitcoin or dogecoin, but its blockchain also supports these NFTs, which store extra information that makes them work differently from, say, an ETH coin. It is worth noting that other blockchains can implement their own versions of NFTs.
@@ -36,10 +47,22 @@ export const Art = () => {
             </Box>
             <Button 
                 bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 110%, #052FC2 10%   )'   
-                p={5} w='186px' h='55px' 
+                p={5} 
+                w={{base:'100px',md:'150px',lg:'150px',xl:'186px'}}
+                h={{base:'40px',md:'45px',lg:'50px',xl:'55px'}} 
+                fontSize={{base:'10px',md:'14px',lg:'18px'}}  
                 borderRadius={20} mt={10} 
-                box-shadow='4px 38px 62px'>
-                <Text color='secondary'fontSize='25px' >
+                box-shadow='4px 38px 62px'
+                fontWeight='500'
+                letterSpacing={2}
+                variant='link'
+                _focus='transparent'
+            >
+                <Text 
+                    color='secondary' 
+                    fontSize='15px'
+                    letterSpacing='10%' 
+                >
                     Explore
                 </Text> 
             </Button>

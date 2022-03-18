@@ -4,15 +4,16 @@ import NextLink from 'next/link'
 
 export const NavBar = () => {
     return (
-        <Flex bg="primary" h='100px' width='100%' mx='auto' justify='flex-end' align='center'    
+        <Flex 
+            bg="primary" h='100px' width='100%' mx='auto' justify='flex-end' align='center'    
          >
             <Stack 
                 direction="row" 
-                spacing='74px'
-                justify='space-between'  
-                fontSize={{sm:'10px', md:"20px", '2xl':'16px', } }
+                spacing={{base:'10px', md:'30px',lg:'50px', xl:'78px'}}
+                justify='space-between' 
+                fontSize={{sm:'10px', lg:"14px", xl:'16px', } }
                 align='center'
-                mr='112px'
+                mr={{base:'10px',md:'30px',lg:'40px', xl:'70px'}}
             >       
                 {Arr?.map((item, index) => {
                     return <NextLink key={index} href={item.link} passHref>
@@ -21,23 +22,24 @@ export const NavBar = () => {
                 })}
                 <Input  
                     fontSize={{base:"12px", md:"13px",lg:"16px"}}  
-                    // w={{base:"100px", md:"200px",xl:'250px', lg:"290px"}} 
-                    w='290px'
-                    h="38px" 
+                    w={{base:'',md:'200px', lg:'250px', xl:'290px'}}
+                    h= {{base:'',md:'30px', lg:'34px', xl:'38px'}}
                     placeholder="search" 
                     borderRadius="20" 
                 />
                 <Button 
                     bg="customBlue" _hover={{ bg: "blue" }}
-                    w={{base:"100px",lg:"115px"}} 
-                    h="38px" borderRadius="20" justify='center'  
-                    fontWeight='small' 
-                    color="white" 
-                    fontSize={{base:"12px", md:"12px",lg:"16px"}}
-                    p='20px'
+                    w={{base:'',  md:'100px',lg:'120px', xl:'150px'}}
+                    h="38px" 
+                    borderRadius="34px" 
+                    justify='center'
                     align='center'
-                >
-                    <Text>
+                    >
+                    <Text
+                        fontWeight='400' 
+                        fontSize={{base:'10px',md:'12px',lg:'14px',xl:'16px'}}
+                        color="white" 
+                    >
                         Connect Wallet
                     </Text>
                 </Button>

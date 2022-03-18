@@ -1,16 +1,23 @@
 import { AddIcon, MinusIcon } from '@chakra-ui/icons'
 import {
   Accordion, AccordionButton, AccordionItem, AccordionPanel, Box,
-  Flex, Heading, Text, Circle, Button
+  Flex,Text, Circle, Button, Divider
 } from '@chakra-ui/react'
 import vector1 from '../../../public/vector1.png'
 import NextImage from 'next/image'
 
 export const FAQ = () => {
   return (
-    <Flex w='100%' bg='primary' mx='auto' my="10" justify='center' direction='column' align='center'  >
-      <Flex color='secondary' justify='center' fontSize='40px' mt={0}>
-        <Heading fontSize={{base:'40px' ,'2xl':'60px'}}> FAQs </Heading>
+    <Flex w={{base:'300px', md:'500px',lg:'700px', xl:'961px'}} bg='primary' mx='auto' my="10" justify='center' direction='column' align='center'  >
+      <Flex color='secondary' justify='center'>
+        <Text 
+          fontSize={{base:'20px', md:'25px', lg:'30px', xl:'38px'}}
+          fontWeight={700}
+          color='secondary'
+          letterSpacing={2}
+        > 
+          FAQs 
+        </Text>
       </Flex>
         <Circle 
           style={{ filter: "blur(300px)" }} 
@@ -21,14 +28,17 @@ export const FAQ = () => {
           mr='80%' 
           mt='-20%' 
         /> 
-      <Box mt={10} w='70%' align='center' >
+      <Box mt={10} w='100%' align='center' >
         <Accordion allowToggle borderRadius='22px' textColor='secondary' fontSize='20px' w='100%' >
           {AccordItems.map((item, index) => {
-            return <AccordionItem border='none' bg='rgba(39, 39, 39, 0.6)' key={index} my="10" py="5" borderRadius="30px" px="10" >
+            return <AccordionItem border='none' bg='rgba(39, 39, 39, 0.6)' key={index} my="10" py="5" borderRadius="30px" px="5" >
               {({ isExpanded }) => (
                 <>
-                    <AccordionButton >
-                      <Box flex='1' textAlign='left'>
+                    <AccordionButton 
+                      h='10px' 
+                      _focus='transparent'
+                    >
+                      <Box flex='1' textAlign='left' >
                         {item.heading}
                       </Box>
                       {isExpanded ? (
@@ -37,9 +47,9 @@ export const FAQ = () => {
                         <AddIcon fontSize='12px' />
                       )}
                     </AccordionButton>
-                  <AccordionPanel pb={4}  textAlign='left'>
-
-                    {item.desc.map((des, keyIndex) => <Text key={keyIndex}>{des}</Text>)}
+                  <AccordionPanel pb={4}  textAlign='left' >
+                    <Box bg='#052FC2' mt='10px' p='1px' />
+                    {item.desc.map((des, keyIndex) => <Text key={keyIndex}mt='10px' >{des}</Text>)}
                   </AccordionPanel>
                 </>
               )}
@@ -48,44 +58,42 @@ export const FAQ = () => {
           })}
         </Accordion >
       </Box>
-      <Circle 
-        style={{ filter: "blur(300px)" }} 
-        w='300px' h="300px" 
-        bg='#052FC2' 
-        position='absolute' 
-        ml={{ md:'40%', lg:'50%', 'xl':'60%'  ,'2xl':'75%'}} 
-        mb='-30%'  
-      /> 
-        <Flex bg='primary' w='100%' mx='auto' direction='column' mt='5%'  >
-        <Box ml='63%' mt='50px' position='absolute' >
-            <NextImage src={vector1}   />
-        </Box>          
-        <Flex direction='column'  w='60%' bg='rgba(39, 39, 39, 0.6)'  mx='auto'  p='100px' borderRadius="23px" mb="20" align="center"  >
-            <Flex color='secondary' direction='column' align='center' mt="10px" position='relative'  >
-
-                <Heading mt='-10%' fontSize={{base:'40px' ,'2xl':'60px'}} textAlign='center' > Join Our Community </Heading>
-                
-                <Text  mt={10} fontSize='20px'>At a very high level, most NFTs are part of the Ethereum blockchain.</Text>
-                
-                <Button bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 130%, #052FC2 10%   )'   w='186px' h='55px' borderRadius={20} shadow={5} mt={10} fontSize='15px'>
-                <Text color='secondary'fontSize='20px' >
-                  Launch Discord
-                </Text> 
-            </Button>
-            </Flex>
-        </Flex>
-            <Box w='20%' align='flex-start' position='absolute' ml={-10}  >
-                <Circle style={{ filter: "blur(600px)" }} opacity='0.1' shadow='10px' w='500px' h="500px" bg='#052FC2' position='flex-end' ml='1px' />
-            </Box>
+        <Flex direction='column'  w='100%' h='300px' bg='rgba(39, 39, 39, 0.6)' mt='5%'   mx='auto' borderRadius="23px" mb="20" align="center" justify='center'  position='relative' >
+                <Box position='absolute' ml='40%' mt='-20%' >
+                    <NextImage src={vector1}   />
+                </Box>          
+                <Text 
+                  fontSize={{base:'20px', md:'25px', lg:'30px', xl:'38px'}}
+                  fontWeight='700'
+                  textAlign='center' 
+                  color='secondary'
+                > 
+                  Join Our Community   
+                </Text>
+                <Text  
+                  mt={10} 
+                  fontSize={{base:'10px', md:'14px', lg:'16px', xl:'20px'}} 
+                  color='secondary'
+                >
+                    At a very high level, most NFTs are part of the Ethereum blockchain.</Text>
+                <Button 
+                  bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 130%, #052FC2 10%   )'   
+                  w={{base:'100px',md:'150px',lg:'150px',xl:'186px'}}
+                  h={{base:'40px',md:'45px',lg:'50px',xl:'55px'}} 
+                  fontSize={{base:'10px',md:'14px',lg:'18px'}} 
+                  borderRadius={20} 
+                  shadow={5} 
+                  mt={10}                             
+                  fontWeight='500'
+                  letterSpacing={2}
+                  variant='link'
+                  _focus='transparent'
+                >
+                    <Text color='secondary' >
+                      Launch Discord
+                    </Text> 
+              </Button>
         </Flex> 
-      <Circle 
-        style={{ filter: "blur(300px)" }} 
-        w='300px' h="300px" 
-        bg='#052FC2' 
-        position='absolute' 
-        ml={{ md:'-40%', lg:'-50%', 'xl':'-60%'  ,'2xl':'-75%'}} 
-        mb='-80%'  
-      /> 
     </Flex>
   )
 }

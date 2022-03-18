@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, SimpleGrid, Text, Stack, Circle } from "@chakra-ui/react"
+import { Button, Flex, Heading, SimpleGrid, Text, Stack, Circle,Box } from "@chakra-ui/react"
 import RectOne from '../../../public/rect.png'
 import Rect2 from '../../../public/Rect2.png'
 import Rect3 from '../../../public/Rect3.png'
@@ -24,30 +24,75 @@ export const CreateNFT = () => {
                 mr='80%'  
                 mt='-130%'
             /> 
-             <Button bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 130%, #052FC2 10%   )'   p={5} w='186px' h='55px' borderRadius={20} shadow={5} mt={10} fontSize='15px'>
-                <Text color='secondary'fontSize='25px' >
+            <Button 
+                bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 130%, #052FC2 10%   )'   
+                p={5}  
+                borderRadius={20} shadow={5} mt={10} 
+                w={{base:'100px',md:'150px',lg:'150px',xl:'186px'}}
+                h={{base:'40px',md:'45px',lg:'50px',xl:'55px'}} 
+                fontSize={{base:'10px',md:'14px',lg:'18px'}} 
+                fontWeight='500'
+                letterSpacing={2}
+                variant='link'
+                _focus='transparent'
+            >
+                <Text color='secondary'>
                     Explore
                 </Text> 
             </Button>
 
-            <Text fontWeight='bold' fontSize='20px' mt={20} color='#9C00E8' >HOW TO BE A CREATOR</Text>
-            <Heading fontSize={{base:'40px' ,'2xl':'60px'}} color='secondary'>Create and Sell your NFTs </Heading>
-            
-            <Stack direction={{base:'column', lg:'row'}} w='70%'  justify='space-between' spacing={20} mt={20}>
-                    {NFTArr.map((item, index) => <NFTCard key={index} image={item.image} title={item.title} ether={item.ether} />)}
-            </Stack>
+            <Heading fontWeight='bold' fontSize='18px' mt={20} color='#9C00E8' >How To Be A Creator</Heading>
+            <Text 
+                fontSize='38px'
+                fontWeight='700'
+                lineHeight='55.81px'
+                letterSpacing={3}
+                color='secondary'
+            >
+                Create and Sell Your NFTs 
+            </Text>
+            <Flex w='100%' mx='auto'>
+                <Stack direction={{md:'column', lg:'row'}} mx='auto' align='center' justify='space-between' spacing={20}  mt={20} >
+                        {NFTArr.map((item, index) => <NFTCard key={index} image={item.image} title={item.title} ether={item.ether} />)}
+                </Stack>
+            </Flex>
             <Stack direction='row' justify='space-between' spacing={10}  mt={20}>
                 <Button 
-                    bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 130%, #052FC2 10%   )'   
-                    p={5} w='186px' h='55px' 
-                    borderRadius={20} 
-                    box-shadow='4px 38px 62px'
+                   bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 110%, #052FC2 10%   )'   
+                   p={5} 
+                   w={{base:'100px',md:'150px',lg:'150px',xl:'186px'}}
+                   h={{base:'40px',md:'45px',lg:'50px',xl:'55px'}} 
+                   fontSize={{base:'10px',md:'14px',lg:'18px'}}  
+                   borderRadius={20}
+                   box-shadow='4px 38px 62px'
+                   fontWeight='500'
+                   letterSpacing={2}
+                   variant='link'
+                   _focus='transparent'
+
                  >
                     <Text color='secondary'fontSize='18px' fontWeight='500' >
                         Create
                     </Text> 
                 </Button>
-                <Button  bg='transparent' color='white' p={2} w='186px' h='55px'  borderRadius={20} fontSize='18px' fontWeight='500' border='1px solid white' >Watch Video</Button>
+                <Button    
+                    p={5} 
+                    w={{base:'100px',md:'150px',lg:'150px',xl:'186px'}}
+                    h={{base:'40px',md:'45px',lg:'50px',xl:'55px'}} 
+                    fontSize={{base:'10px',md:'14px',lg:'18px'}}  
+                    borderRadius={20} mt={10} 
+                    box-shadow='4px 38px 62px'
+                    fontWeight='500'
+                    letterSpacing={2}
+                    variant='unstyled'
+                    border= "1px solid white"
+                    textColor='secondary'
+                    _focus='transparent'
+                >
+                    <Text align='center' mt='-5px' >
+                        Watch Video
+                    </Text>
+                </Button>
             </Stack>
                 <Circle 
                     style={{ filter: "blur(290px)" }} 
@@ -59,14 +104,39 @@ export const CreateNFT = () => {
                 /> 
            
             <Flex w="100%" direction='column' justify="center" my="20" mx='auto' align='center'  >
-                <Text fontWeight='bold' fontSize='20px' color='#9C00E8' >HOW TO BE A CREATOR</Text>
-                <Heading fontSize={{base:'40px' ,'2xl':'60px'}} color='secondary' >Create and Sell your NFTs </Heading>
+            <Heading fontWeight='bold' fontSize='18px' mt={20} color='#9C00E8' >How To Be A Creator</Heading>
+            <Text 
+                fontSize='38px'
+                fontWeight='700'
+                lineHeight='55.81px'
+                letterSpacing={3}
+                color='secondary'
+            >
+                Create and Sell Your NFTs 
+            </Text>
 
-                <SimpleGrid columns={{base:'1',lg:'2', xl:'3'}} spacing="10" alignItems='center' mt={20} >
+                <SimpleGrid columns={{base:'1',lg:'2', xl:'3'}} spacing="10" textColor='secondary' alignItems='center' mt={20} >
                     {CardArr.map((item, index) => <NFTComponent key={index} image={item.image} title={item.title} ether={item.ether} />)}
                 </SimpleGrid>
 
-                <Button  bg='transparent' color='white' borderColor='secondary' border='1px' p={2} w='186px' h='55px' borderRadius={20} shadow={1} mt={20} fontSize='15px'>View Ranking</Button>
+                <Button    
+                    p={5} 
+                    w={{base:'100px',md:'150px',lg:'150px',xl:'186px'}}
+                    h={{base:'40px',md:'45px',lg:'50px',xl:'55px'}} 
+                    fontSize={{base:'10px',md:'14px',lg:'18px'}}  
+                    borderRadius={20} mt={10} 
+                    box-shadow='4px 38px 62px'
+                    fontWeight='500'
+                    letterSpacing={2}
+                    variant='unstyled'
+                    border= "1px solid white"
+                    textColor='secondary'
+                    _focus='transparent'
+                >
+                    <Text align='center' mt='-5px' >
+                        View Ranking
+                    </Text>
+                </Button>
             </Flex>
         </Flex>
     )
@@ -129,7 +199,8 @@ const NFTArr = [
         title: "Upload",
         ether: "At a very high level, most NFTs are part of the Ethereum blockchain.",
 
-    }, {
+    }, 
+    {
         image: Preferences,
         title: "Listing",
         ether: "At a very high level, most NFTs are part of the Ethereum blockchain.",
@@ -137,28 +208,33 @@ const NFTArr = [
     }
 ]
 
-const NFTCard = ({ image, title, ether }) => <Flex bg="#101112" direction='column' align='center' textColor='white' borderRadius={30} justify='center' w='336px' h='383px' >
-    <Stack align='center'  >
+const NFTCard = ({ image, title, ether }) => <Flex bg="#101112" direction='column' align='center' textColor='white' borderRadius={30} justify='center' mx='auto' w='336px' h='383px' >
             <NextImage src={image} width='128px' height='128px' ></NextImage>
             <Text textAlign='center' fontSize='22px' fontWeight='700'>{title}</Text>
-            <Text textAlign='center' fontSize='20px'fontWeight='300' mt={5}>{ether}</Text>
-    </Stack>
+            <Box w='90%' mt='20px'>
+                <Text textAlign='center' fontSize='20px'fontWeight='300' mt={5}>{ether}</Text>
+            </Box>
 </Flex>
 
-const NFTComponent = ({ image, title,  ether, desc  }) => <Flex bg="#272727" direction='row' borderRadius="xl" m="5"  w='320px' h='120px'  p="4"  >
-        <NextImage src={image} width="90px" height="89px" alt="logo-image"></NextImage>
-        <Flex direction="column" ml="2" >
-            <Text>{title}</Text>
-            <Flex direction='row' mt={5} justify='space-between' alignItems='center' w='100%'  spacing='10%' >
+const NFTComponent = ({ image, title,  ether, desc  }) => <Flex bg="#272727" direction='row' borderRadius="xl" m="5"  w='370px' h='120px'  p="4"  align='center' >
+    <Box cornerRadius='22px'  alignContent='center'>
+        <NextImage src={image} width="90px" height="89px" alt="logo-image" />
+    </Box>
+        <Flex justify='space-between'ml={3} w='90%'>
+
+        <Flex direction="column"  >
+            <Text fontSize='18px' fontWeight='500'>{title}</Text>
+            <Flex direction='row' mt={5} justify='space-between' align='center'  spacing='20%'>
                 <Circle  h='20px' w='20px' bg='#5F7FEC' >
-                    <NextImage src={ETH} h='200px' w='200px'borderRadius='22px' />
+                    <NextImage src={ETH} h='200px' w='200px'cornerRadius='22px' />
                 </Circle> 
                 <Text >{ether}</Text>
             </Flex>
-            <Flex   >
-                <Text  color="white" >...</Text>
-            </Flex>
         </Flex>
+        <Flex justify='center' align='center'  >
+            <Text  color="white" fontWeight='700' >...</Text>
+        </Flex>
+    </Flex>
 
 </Flex>
 
