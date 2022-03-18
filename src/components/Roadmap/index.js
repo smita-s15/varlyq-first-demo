@@ -11,7 +11,7 @@ export const Roadmap = () => {
             <Divider mt={10} opacity='20%' />
             <Flex direction='column' width='100%' mx='auto' justify='space-between'  >
                 <Flex direction="column" justify='center' mx='auto'  >
-                    <TopShapeRoadMap />
+                    <TopShapeRoadMap data-aos="zoom-in" />
                     {arr.map((item, index) => {
                         return <div key={index}>
                             <FirstComponent percent={item.percentForComponentOne}>
@@ -48,7 +48,7 @@ const TopShapeRoadMap = (props) => {
 const DataComponent = (props) => {
     const { heading, text1, text2, text4, text3, ...rest } = props
 
-    return <Flex direction="column" p="10" {...rest} overflow="hidden">
+    return <Flex direction="column" p="10" {...rest} overflow="hidden" data-aos="zoom-in"  >
         <Heading fontSize={{base:'20px', md: "25px", lg:'30px' }} color="white" >{heading}</Heading>
         <Flex mt='10px' direction='column' w='80%' fontSize={{sm:'10px', md:'xs'}} >
             <Text mt="2" color="white">{text1}</Text>

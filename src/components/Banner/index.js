@@ -17,6 +17,7 @@ export const Banner = () => {
             align='center'
             mt={{ base: '-40%', sm: '-25%', md: '-20%', lg: '-100px' }}
             direction='column'
+            position='relative'
         >
             <Box ml='5%' mb='-5px'  >
                 <NextImage src={vector1} />
@@ -45,14 +46,14 @@ export const Banner = () => {
                     align='center'
                     w='80%'
                     position='relative'
+                    data-aos="zoom-out-down"
                 >
                     Discover
                     <Box
                         display="inline-flex"
-                        transform="translateY(30%)"   
-                    >
-                        <Box h="100%" w="100%"  >
-                            <NextImage src={bannerRect}  />
+                        transform="translateY(30%)"   >
+                        <Box h="100%" w="100%">
+                            <NextImage src={bannerRect} />
                         </Box>
                         <Box ml='-125%' mt='-45%' >
                             <NextImage src={vector2} />

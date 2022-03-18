@@ -2,7 +2,7 @@ import { Circle, Flex, Text } from '@chakra-ui/react'
 
 export const FirstComponent = ({ children, percent }) => {
     return (
-        <Flex direction="column" pos="relative"  >
+        <Flex direction="column" pos="relative"  data-aos="zoom-in" >
             {children}
             <Flex transform="translateX(-33%)" align="center">
             <Circle 

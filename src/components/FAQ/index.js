@@ -88,6 +88,7 @@ export const FAQ = () => {
                   letterSpacing={2}
                   variant='link'
                   _focus='transparent'
+                  data-aos="zoom-out-down"
                 >
                     <Text color='secondary' >
                       Launch Discord

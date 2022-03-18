@@ -35,10 +35,10 @@ export const CreateNFT = () => {
                 letterSpacing={2}
                 variant='link'
                 _focus='transparent'
+                data-aos="zoom-out-down"
+                
             >
-                <Text color='secondary'>
                     Explore
-                </Text> 
             </Button>
 
             <Heading fontWeight='bold' fontSize='18px' mt={20} color='#9C00E8' >How To Be A Creator</Heading>
@@ -51,8 +51,8 @@ export const CreateNFT = () => {
             >
                 Create and Sell Your NFTs 
             </Text>
-            <Flex w='100%' mx='auto'>
-                <Stack direction={{md:'column', lg:'row'}} mx='auto' align='center' justify='space-between' spacing={20}  mt={20} >
+            <Flex w='100%' mx='auto' wrap="wrap">
+                <Stack direction={{md:'column', lg:'column', xl:'row'}} mx='auto' align='center' justify='space-between' spacing={20}  mt={20}  wrap="wrap" >
                         {NFTArr.map((item, index) => <NFTCard key={index} image={item.image} title={item.title} ether={item.ether} />)}
                 </Stack>
             </Flex>
@@ -69,11 +69,9 @@ export const CreateNFT = () => {
                    letterSpacing={2}
                    variant='link'
                    _focus='transparent'
-
+                   data-aos="zoom-out-down"
                  >
-                    <Text color='secondary'fontSize='18px' fontWeight='500' >
-                        Create
-                    </Text> 
+                     Create
                 </Button>
                 <Button    
                     p={5} 
@@ -84,14 +82,13 @@ export const CreateNFT = () => {
                     box-shadow='4px 38px 62px'
                     fontWeight='500'
                     letterSpacing={2}
-                    variant='unstyled'
+                    variant='link'
                     border= "1px solid white"
                     textColor='secondary'
                     _focus='transparent'
+                    data-aos="zoom-out-down"
                 >
-                    <Text align='center' mt='-5px' >
                         Watch Video
-                    </Text>
                 </Button>
             </Stack>
                 <Circle 
@@ -128,14 +125,15 @@ export const CreateNFT = () => {
                     box-shadow='4px 38px 62px'
                     fontWeight='500'
                     letterSpacing={2}
-                    variant='unstyled'
+                    variant='link'
                     border= "1px solid white"
                     textColor='secondary'
                     _focus='transparent'
+                    data-aos="zoom-out-down"
                 >
-                    <Text align='center' mt='-5px' >
+                    <a align='center'  >
                         View Ranking
-                    </Text>
+                    </a>
                 </Button>
             </Flex>
         </Flex>
@@ -208,7 +206,7 @@ const NFTArr = [
     }
 ]
 
-const NFTCard = ({ image, title, ether }) => <Flex bg="#101112" direction='column' align='center' textColor='white' borderRadius={30} justify='center' mx='auto' w='336px' h='383px' >
+const NFTCard = ({ image, title, ether }) => <Flex bg="#101112" direction='column' align='center' textColor='white' borderRadius={30} justify='center' mx='auto' w='336px' h='383px' data-aos="zoom-in-left" >
             <NextImage src={image} width='128px' height='128px' ></NextImage>
             <Text textAlign='center' fontSize='22px' fontWeight='700'>{title}</Text>
             <Box w='90%' mt='20px'>
@@ -216,7 +214,7 @@ const NFTCard = ({ image, title, ether }) => <Flex bg="#101112" direction='colum
             </Box>
 </Flex>
 
-const NFTComponent = ({ image, title,  ether, desc  }) => <Flex bg="#272727" direction='row' borderRadius="xl" m="5"  w='370px' h='120px'  p="4"  align='center' >
+const NFTComponent = ({ image, title,  ether, desc  }) => <Flex bg="#272727" direction='row' borderRadius="xl" m="5"  w='370px' h='120px'  p="4"  align='center' data-aos="zoom-in" >
     <Box cornerRadius='22px'  alignContent='center'>
         <NextImage src={image} width="90px" height="89px" alt="logo-image" />
     </Box>

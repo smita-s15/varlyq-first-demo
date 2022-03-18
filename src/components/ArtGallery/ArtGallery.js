@@ -4,11 +4,12 @@ import bannerRect4 from '../../../public/bannerRect4.png'
 
 export const Art = () => {
     return (
-        <Flex bg='primary' mt='15%' mx='auto' width='80%' direction='row' justify='space-between' alignContent='center' h='35rem' >
+        <Flex bg='primary' mt='15%' mx='auto' width='80%' direction='row' justify='space-between' alignContent='center' h='35rem'  >
             <Box 
                 h={{base:'100px', md:'250px', lg:'350px', xl:'480px'}} 
                 w={{base:'100px', md:'250px', lg:'350px', xl:'480px'}} 
-                borderRadius={20}  
+                borderRadius={20} 
+                data-aos="fade-right" 
             >
                 <NextImage src={bannerRect4} layout='responsive' />
             </Box>
@@ -18,7 +19,7 @@ export const Art = () => {
             h={{base:'100px', md:'250px', lg:'350px', xl:'480px'}} 
             w={{base:'100px', md:'250px', lg:'350px', xl:'480px'}}
             direction='column'
-            direction='column' 
+            data-aos="fade-left" 
         >
             <Heading 
                 color='secondary' 
@@ -57,6 +58,7 @@ export const Art = () => {
                 letterSpacing={2}
                 variant='link'
                 _focus='transparent'
+                data-aos="zoom-out-down"
             >
                 <Text 
                     color='secondary' 

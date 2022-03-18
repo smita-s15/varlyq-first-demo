@@ -2,7 +2,7 @@ import { Circle, Flex, Text } from "@chakra-ui/react"
 
 export const SeccondComponent = ({ children, percent }) => {
     return (
-        <Flex direction="column" pos="relative" >
+        <Flex direction="column" pos="relative" data-aos="zoom-in" >
             <Flex pos="absolute" top="0" right="0" justify="flex-end">
                 {children}
             </Flex>

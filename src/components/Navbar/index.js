@@ -14,6 +14,7 @@ export const NavBar = () => {
                 fontSize={{sm:'10px', lg:"14px", xl:'16px', } }
                 align='center'
                 mr={{base:'10px',md:'30px',lg:'40px', xl:'70px'}}
+                data-aos='fade-right'
             >       
                 {Arr?.map((item, index) => {
                     return <NextLink key={index} href={item.link} passHref>

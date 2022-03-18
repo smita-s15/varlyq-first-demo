@@ -5,7 +5,7 @@ import { Circle } from "@chakra-ui/react"
 
 export const About = () => {
     return (
-        <Flex bg="primary" mx='auto' w='100%' h="41rem" align='center' direction='column' 
+        <Flex bg="primary" mx='auto' w='100%' h="48rem" align='center' direction='column' 
         mt={{base:'-10px', md:'15px', lg:'20px', xl:'25px'}} >
             <Circle 
                 style={{ filter: "blur(290px)" }} 
@@ -16,12 +16,12 @@ export const About = () => {
                 ml='-10%'  
                 mt='-10%'
             /> 
-            <Flex   position='relative' justifyContent='space-between'   align='center' w='80%' >
+            <Flex   position='relative' justifyContent='space-between'   align='center' w='80%'    >
                     <Flex 
                         mt={-5} 
                         h={{base:'100px', md:'250px', lg:'350px', xl:'480px'}} 
                         w={{base:'100px', md:'250px', lg:'350px', xl:'480px'}}
-                        direction='column' >
+                        direction='column' data-aos='fade-right' >
                         <Heading 
                             color='secondary' 
                             fontSize={{base:'20px',md:'20px',lg:'30px',xl:'40px'}}
@@ -50,6 +50,7 @@ export const About = () => {
                             fontSize='18px'
                             letterSpacing='50%'
                             color='secondary'
+                            data-aos="zoom-in-left"
                             >
                                 <Text color='secondary' >
                                     Explore
@@ -59,7 +60,8 @@ export const About = () => {
                     <Box 
                         h={{base:'100px', md:'250px', lg:'350px', xl:'480px'}} 
                         w={{base:'100px', md:'250px', lg:'350px', xl:'480px'}} 
-                        borderRadius={20}  
+                        borderRadius={20}
+                        data-aos='fade-left'  
                     >
                         <NextImage src={AboutImage} layout='responsive' />
                     </Box>

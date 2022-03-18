@@ -15,7 +15,7 @@ import NextLink from 'next/link'
 
 export const Card = () => {
     return (
-        <Flex w="100%" mt={{base:'-40px', md:'-30%', lg:'-10%', xl:'25px'}} bg='primary' justify="center" direction='column' mx='auto' align='center'  >
+        <Flex w="100%"  mt={{sm:'-40px', md:'-30%', lg:'-10%'}} bg='primary' justify="center" direction='column' mx='auto' align='center' data-aos="fade-right"  >
             <Circle 
                 style={{ filter: "blur(290px)" }} 
                 w='350px' 
@@ -74,6 +74,7 @@ export const Card = () => {
                 letterSpacing={2}
                 variant='link'
                 _focus='transparent'
+                data-aos="zoom-out-down"
             >
                 <Text 
                     fontSize='18px'
