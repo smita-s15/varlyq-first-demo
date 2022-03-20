@@ -7,11 +7,11 @@ export const FirstComponent = ({ children, percent }) => {
             <Flex transform="translateX(-33%)" align="center">
             <Circle 
                     style={{ filter: "blur(290px)" }} 
-                    w='350px' 
-                    h="350px" 
+                    w={{sm:'200px', md:'250px',lg:'350px' }}
+                    h={{sm:'200px', md:'250px',lg:'350px' }} 
                     bg='#052FC2' 
                     position='absolute' 
-                    ml={{base:'-10%',md:'10%',lg:'-90%', xl:'-200%'}} 
+                    ml={{base:'-40%',md:'-60%',lg:'-70%', xl:'-100%' ,'2xl':'-170%'}} 
                     mt='-40%' 
                    
                 /> 

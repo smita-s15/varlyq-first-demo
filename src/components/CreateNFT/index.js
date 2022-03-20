@@ -14,7 +14,7 @@ import NextImage from 'next/image'
 
 export const CreateNFT = () => {
     return (
-        <Flex w="100%" direction='column' justify="center" my="20" mx='auto' align='center' >
+        <Flex w="100%" direction='column' justify="center" mx='auto' align='center' >
               <Circle 
                 style={{ filter: "blur(290px)" }} 
                 w='350px' 
@@ -36,6 +36,7 @@ export const CreateNFT = () => {
                 variant='link'
                 _focus='transparent'
                 data-aos="zoom-out-down"
+                textColor='secondary'
                 
             >
                     Explore
@@ -70,6 +71,7 @@ export const CreateNFT = () => {
                    variant='link'
                    _focus='transparent'
                    data-aos="zoom-out-down"
+                   textColor='secondary'
                  >
                      Create
                 </Button>
@@ -206,7 +208,7 @@ const NFTArr = [
     }
 ]
 
-const NFTCard = ({ image, title, ether }) => <Flex bg="#101112" direction='column' align='center' textColor='white' borderRadius={30} justify='center' mx='auto' w='336px' h='383px' data-aos="zoom-in-left" >
+const NFTCard = ({ image, title, ether }) => <Flex bg="#101112" direction='column' align='center' textColor='white' borderRadius={30} justify='center' mx='auto' w='336px' h='383px' data-aos="zoom-in" >
             <NextImage src={image} width='128px' height='128px' ></NextImage>
             <Text textAlign='center' fontSize='22px' fontWeight='700'>{title}</Text>
             <Box w='90%' mt='20px'>

@@ -15,20 +15,20 @@ import NextLink from 'next/link'
 
 export const Card = () => {
     return (
-        <Flex w="100%"  mt={{sm:'-40px', md:'-30%', lg:'-10%'}} bg='primary' justify="center" direction='column' mx='auto' align='center' data-aos="fade-right"  >
-            <Circle 
-                style={{ filter: "blur(290px)" }} 
-                w='350px' 
-                h="350px" 
-                bg='#052FC2' 
-                position='absolute' 
-                ml='50%' 
-                mt={{base:'10px', md:'-30px', lg:'-50px',xl:'-90%' }}
-            /> 
+        <Flex w="100%"  bg='primary' justify="center" direction='column' mx='auto' align='center' >
             <Flex direction='row' align='center' justify='center'  mx='auto' w='13%' >
                 <Heading color='#9C00E8' fontSize='20px' fontWeight='extrabold' >Nft   </Heading>
                 <Text color='transparent'>..</Text>
                 <Heading color='#9C00E8' fontSize='18px' fontWeight='normal'>Marketplace</Heading>
+                <Circle 
+                    style={{ filter: "blur(250px)" }} 
+                    w='350px' 
+                    h="350px" 
+                    bg='#052FC2' 
+                    position='absolute' 
+                    ml='-50%' 
+                    mb={{base:'10px', md:'-30px', lg:'-10%',xl:'-90%' }}
+                /> 
             </Flex>
             <Text  
                 fontSize='38px' 
@@ -54,7 +54,7 @@ export const Card = () => {
                 })}
             </Flex>
             <Flex w="100%" justify="center" py="10" mt={10}  >
-                <SimpleGrid columns={{ md:'2', lg:'3',xl:'4'}} spacing="20" >
+                <SimpleGrid columns={{ md:'2', lg:'3',xl:'3', '2xl':'4'}} spacing="20"  >
                     {CardArr.map((item, index) =>
                         <Flex key={index} >
                             <CardComponent image={item.image} title={item.title} desc={item.desc} ether={item.ether} etherImage={item.etherImage} />
@@ -65,9 +65,9 @@ export const Card = () => {
             <Button 
                 bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 110%, #052FC2 10%   )'   
                 p={5} 
-                w={{base:'100px',md:'150px',lg:'150px',xl:'186px'}}
-                h={{base:'40px',md:'45px',lg:'50px',xl:'55px'}} 
-                fontSize={{base:'10px',md:'14px',lg:'18px'}}  
+                w={{sm:'100px',md:'130px',lg:'145px', xl:'160px','2xl':'186px'}}
+                h={{sm:'30px',md:'30px',lg:'40px', xl:'50px', '2xl':'55px'}} 
+                fontSize={{sm:'10px',md:'12px',lg:'14px',xl:'16px'}}  
                 borderRadius={20} mt={10} 
                 box-shadow='4px 38px 62px'
                 fontWeight='500'
@@ -181,7 +181,7 @@ const CardArr = [
     },
 ]
 
-const CardComponent = ({ image, title, desc, ether, etherImage }) => <Flex p="4" bg="#171717" w='260px' h='380px' borderRadius="16px" direction="column" align='center'>
+const CardComponent = ({ image, title, desc, ether, etherImage }) => <Flex p="4" bg="#171717" w='260px' h='380px' borderRadius="16px" direction="column" align='center' data-aos="zoom-in" >
     <NextImage src={image} width="233px" height="267px" alt="logo-image"></NextImage>
     <Flex justify='space-between' w='100%'>
         <Text fontSize="18px"  color="secondary" mt="2">{title}</Text>

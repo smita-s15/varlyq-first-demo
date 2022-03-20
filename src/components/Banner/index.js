@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, } from "@chakra-ui/react"
+import { Box, chakra, Flex, Heading, } from "@chakra-ui/react"
 import NextImage from 'next/image'
 import bannerRect from '../../../public/bannerRect.png'
 import bannerRect2 from '../../../public/bannerRect2.png'
@@ -8,20 +8,15 @@ import vector2 from '../../../public/vector2.png'
 import { Circle } from "@chakra-ui/react"
 
 export const Banner = () => {
-    return (<>
+
+    return (
         <Flex
             w="100%"
             justify='center'
             mx='auto'
-            h='55rem'
             align='center'
-            mt={{ base: '-40%', sm: '-25%', md: '-20%', lg: '-100px' }}
             direction='column'
-            position='relative'
         >
-            <Box ml='5%' mb='-5px'  >
-                <NextImage src={vector1} />
-            </Box>
             <Flex
                 bg="primary"
                 align='center'
@@ -40,23 +35,28 @@ export const Banner = () => {
                     mt='-40%'
                 /> 
                 <Heading
-                    fontSize={{sm:'10px',md:'40px', lg:'60px', xl:'86px'}}
+                    fontSize={{sm:'25px',md:'55px', lg:'60px', xl:'86px'}}
                     color='white'
                     display="inline"
                     align='center'
-                    w='80%'
+                    w={{xl:'100%' , '2xl':'80%'}}
                     position='relative'
                     data-aos="zoom-out-down"
+                    position='relative'
                 >
-                    Discover
+                      Discover
                     <Box
                         display="inline-flex"
-                        transform="translateY(30%)"   >
-                        <Box h="100%" w="100%">
-                            <NextImage src={bannerRect} />
+                        transform={{sm:"translateY(-70%)",md:"translateY(-80%)",lg:"translateY(-80%)" ,xl:"translateY(-150%)" }} position='relative' align='center' 
+                    >                           
+                        <Box position='absolute' ml='45%' mt='-60%'  h='100px' w='100px'>
+                            <NextImage src={vector1} position='absolute'   />
+                        </Box> 
+                        <Box mt={{sm:"-10%",md:"-20%",lg:'-10%',xl:'-30%'}}  ml='-10%'  h='100px' w='100px' >
+                            <NextImage src={vector2}  position='absolute' />
                         </Box>
-                        <Box ml='-125%' mt='-45%' >
-                            <NextImage src={vector2} />
+                        <Box h={{sm:"10px",md:"30px",lg:"40px", xl:'50px'}} w={{sm:"40px", md:"80px",lg:"100px",xl:'150px'}}>
+                            <NextImage src={bannerRect} position='absolute' />
                         </Box>
                     </Box>
                     Collect
@@ -64,37 +64,42 @@ export const Banner = () => {
                     And Sale Rare
                     <Box
                         display="inline-flex"
-                        transform="translateY(30%)" 
-                        w='20%'>
-                        <Box h="100%" w="100%">
-                            <NextImage src={bannerRect2} />
+                        transform={{sm:"translateY(10%)", md:"translateY(10%)",lg:"translateY(15%)",xl:"translateY(25%)",'2xl':"translateY(10%)" }}
+                        w='20%'
+                        position='relative'
+                    >
+                        <Box h={{sm:"100px",md:"180px",lg:"200px",xl:'300px','2xl':'400px'}} w={{sm:"100px",md:"180px",lg:"200px",xl:'300px','2xl':'400px'}}>
+                            <NextImage src={bannerRect2}   position='absolute' />
                         </Box>
-                        <Box mt='20%'  ml='-1%'>
-                            <NextImage src={vector1}  />
-                        </Box>
+                        <Box mt='10%'  mr='-10%' h='100px' w='100px' >
+                            <NextImage src={vector1}    position='absolute'  />
+                        </Box> 
                     </Box>
                     <br />
                     <Flex
                         display="inline-flex"
-                        transform="translateY(65%)"
+                        transform={{sm:"translateY(-20%)",md:"translateY(-10%)",lg:"translateY(10%)",xl:"translateY(-10%)",'2xl':"translateY(-40%)"}}
                         ml='-20%'
-                        mt={-20}
+                        mt='-400%'
                         alignContent='center'
+                        position='relative'
                     >
-                        <NextImage src={bannerRect3}  />
+                        <Box  h={{sm:"50px",md:"100px",lg:"130px",xl:'150px','2xl':'200px'}} w={{sm:"50px",md:"100px", lg:"130px",xl:'150px','2xl':'200px'}} >
+                            <NextImage src={bannerRect3} position='absolute'  />
+                        </Box>
                         Nfts
                     </Flex>
+                   
                 </Heading>
                 <Circle
                     style={{ filter: "blur(290px)" }}
                     w='350px' h="350px"
                     bg='#052FC2'
                     position='absolute'
-                    ml={{ md: '40%', lg: '50%', 'xl': '60%', '2xl': '75%' }}
+                    ml={{sm:"-10%", md: '40%', lg: '50%', 'xl': '60%', '2xl': '75%' }}
                     mb='-30%'
                 />
             </Flex>
         </Flex>
-    </>
     )
 }

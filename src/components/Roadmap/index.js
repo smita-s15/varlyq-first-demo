@@ -4,7 +4,7 @@ import { SeccondComponent } from "./SeccondComponent"
 
 export const Roadmap = () => {
     return (
-        <Flex mx='auto' bg='primary' width='100%' justify='center' direction='column'  >
+        <Flex mx='auto' bg='primary' width='100%' justify='center' direction='column'   >
             <Flex justify='center' >
                 <Heading color='secondary' fontSize='40px' fontWeight='bold'  > ROADMAP</Heading>
             </Flex>
@@ -49,8 +49,8 @@ const DataComponent = (props) => {
     const { heading, text1, text2, text4, text3, ...rest } = props
 
     return <Flex direction="column" p="10" {...rest} overflow="hidden" data-aos="zoom-in"  >
-        <Heading fontSize={{base:'20px', md: "25px", lg:'30px' }} color="white" >{heading}</Heading>
-        <Flex mt='10px' direction='column' w='80%' fontSize={{sm:'10px', md:'xs'}} >
+        <Heading fontSize={{sm:'10px', md: "20px", lg:'25px', xl:'30px' }} color="white" >{heading}</Heading>
+        <Flex mt='10px' direction='column' w='80%' fontSize={{sm:'10px', md:'x12px' , lg:'14px', xl:'16px'}} >
             <Text mt="2" color="white">{text1}</Text>
             <Text mt="2" color="white">{text2}</Text>
             { text3 && <Text mt="2" color="white">{text3}</Text> }

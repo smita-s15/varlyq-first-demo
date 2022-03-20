@@ -17,7 +17,6 @@ export const Footer = () => {
                         </Flex>
                     </Stack>
                     <Stack spacing="4" flex="1" textAlign='left' textColor='#ffffff' Opacity= '75%'
-                    // fontSize={{ sm: '20px', xl: '24px' }} 
                     >
                         <Heading fontSize='16px' fontWeight='400' letterSpacing='2px' color="secondary">
                             Sitemap
@@ -30,14 +29,13 @@ export const Footer = () => {
                             })}
                         </Stack>
                     </Stack>
-                    <Stack spacing="4" flex="1" textAlign='left' 
-                        // fontSize={{ sm: '20px', xl: '24px' }}
+                    <Stack spacing="4" flex="1" textAlign='left' textColor='#ffffff' Opacity= '75%'
                     >
-                    <Heading fontSize='16px' fontWeight='400' letterSpacing='2px' color="secondary">
+                        <Heading fontSize='16px' fontWeight='400' letterSpacing='2px' color="secondary">
                             Socials
                         </Heading>
                         <Stack spacing="5" shouldWrapChildren >
-                            {SocialArr?.map((item, index) => {
+                        {SocialArr?.map((item, index) => {
                                 return <NextLink key={index} href={item.link} passHref>
                                     <Link color='secondary'>{item.title}</Link>
                                 </NextLink>
