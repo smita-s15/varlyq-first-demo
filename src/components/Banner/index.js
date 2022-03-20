@@ -49,14 +49,26 @@ export const Banner = () => {
                         display="inline-flex"
                         transform={{sm:"translateY(-70%)",md:"translateY(-80%)",lg:"translateY(-80%)" ,xl:"translateY(-150%)" }} position='relative' align='center' 
                     >                           
-                        <Box position='absolute' ml='45%' mt='-60%'  h='100px' w='100px'>
+                        <Box 
+                            position='absolute' 
+                            ml='45%' 
+                            mt='-60%'  
+                            h='100px' 
+                            w='100px'
+                        >
                             <NextImage src={vector1} position='absolute'   />
                         </Box> 
-                        <Box mt={{sm:"-10%",md:"-20%",lg:'-10%',xl:'-30%'}}  ml='-10%'  h='100px' w='100px' >
+                        <Box 
+                            mt={{sm:"-10%",md:"-20%",lg:'-10%',xl:'-30%'}}  
+                            ml='-10%'   
+                        >
                             <NextImage src={vector2}  position='absolute' />
                         </Box>
-                        <Box h={{sm:"10px",md:"30px",lg:"40px", xl:'50px'}} w={{sm:"40px", md:"80px",lg:"100px",xl:'150px'}}>
-                            <NextImage src={bannerRect} position='absolute' />
+                        <Box 
+                            h={{sm:"10px",md:"30px",lg:"40px", xl:'50px'}} 
+                            w={{sm:"40px", md:"80px",lg:"100px",xl:'150px'}}
+                        >
+                            <NextImage src={bannerRect}  position='absolute' />
                         </Box>
                     </Box>
                     Collect
@@ -68,10 +80,18 @@ export const Banner = () => {
                         w='20%'
                         position='relative'
                     >
-                        <Box h={{sm:"100px",md:"180px",lg:"200px",xl:'300px','2xl':'400px'}} w={{sm:"100px",md:"180px",lg:"200px",xl:'300px','2xl':'400px'}}>
+                        <Box 
+                            h={{sm:"100px",md:"180px",lg:"200px",xl:'300px','2xl':'400px'}} 
+                            w={{sm:"100px",md:"180px",lg:"200px",xl:'300px','2xl':'400px'}}
+                        >
                             <NextImage src={bannerRect2}   position='absolute' />
                         </Box>
-                        <Box mt='10%'  mr='-10%' h='100px' w='100px' >
+                        <Box 
+                            mt='10%'  
+                            mr='-10%' 
+                            h='100px' 
+                            w='100px' 
+                        >
                             <NextImage src={vector1}    position='absolute'  />
                         </Box> 
                     </Box>
@@ -84,7 +104,10 @@ export const Banner = () => {
                         alignContent='center'
                         position='relative'
                     >
-                        <Box  h={{sm:"50px",md:"100px",lg:"130px",xl:'150px','2xl':'200px'}} w={{sm:"50px",md:"100px", lg:"130px",xl:'150px','2xl':'200px'}} >
+                        <Box  
+                            h={{sm:"50px",md:"100px",lg:"130px",xl:'150px','2xl':'200px'}} 
+                            w={{sm:"50px",md:"100px", lg:"130px",xl:'150px','2xl':'200px'}} 
+                        >
                             <NextImage src={bannerRect3} position='absolute'  />
                         </Box>
                         Nfts
