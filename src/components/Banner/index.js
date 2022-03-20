@@ -47,7 +47,7 @@ export const Banner = () => {
                       Discover
                     <Box
                         display="inline-flex"
-                        transform={{sm:"translateY(-70%)",md:"translateY(-80%)",lg:"translateY(-80%)" ,xl:"translateY(-150%)" }} position='relative' align='center' 
+                        transform={{sm:"translateY(130%)",md:"translateY(-80%)",lg:"translateY(-80%)" ,xl:"translateY(-150%)" }} position='relative' align='center' 
                     >                           
                         <Box 
                             position='absolute' 
@@ -55,12 +55,14 @@ export const Banner = () => {
                             mt='-60%'  
                             h='100px' 
                             w='100px'
+                            display={['none', 'none', 'flex', 'flex']} 
                         >
                             <NextImage src={vector1} position='absolute'   />
                         </Box> 
                         <Box 
                             mt={{sm:"-10%",md:"-20%",lg:'-10%',xl:'-30%'}}  
-                            ml='-10%'   
+                            ml='-10%'
+                            display={['none', 'none', 'flex', 'flex']}   
                         >
                             <NextImage src={vector2}  position='absolute' />
                         </Box>
@@ -76,7 +78,7 @@ export const Banner = () => {
                     And Sale Rare
                     <Box
                         display="inline-flex"
-                        transform={{sm:"translateY(10%)", md:"translateY(10%)",lg:"translateY(15%)",xl:"translateY(25%)",'2xl':"translateY(10%)" }}
+                        transform={{sm:"translateY(15%)", md:"translateY(10%)",lg:"translateY(15%)",xl:"translateY(25%)",'2xl':"translateY(10%)" }}
                         w='20%'
                         position='relative'
                     >
@@ -91,6 +93,7 @@ export const Banner = () => {
                             mr='-10%' 
                             h='100px' 
                             w='100px' 
+                            display={['none', 'none', 'flex', 'flex']} 
                         >
                             <NextImage src={vector1}    position='absolute'  />
                         </Box> 
@@ -98,7 +101,7 @@ export const Banner = () => {
                     <br />
                     <Flex
                         display="inline-flex"
-                        transform={{sm:"translateY(-20%)",md:"translateY(-10%)",lg:"translateY(10%)",xl:"translateY(-10%)",'2xl':"translateY(-40%)"}}
+                        transform={{sm:"translateY(-10%)",md:"translateY(-10%)",lg:"translateY(10%)",xl:"translateY(-10%)",'2xl':"translateY(-40%)"}}
                         ml='-20%'
                         mt='-400%'
                         alignContent='center'
