@@ -47,14 +47,14 @@ export const Banner = () => {
                       Discover
                     <Box
                         display="inline-flex"
-                        transform={{sm:"translateY(130%)",md:"translateY(-80%)",lg:"translateY(-80%)" ,xl:"translateY(-150%)" }} position='relative' align='center' 
+                        transform={{sm:"translateY(130%)",md:"translateY(-180%)",lg:"translateY(-150%)" ,xl:"translateY(-250%)" }} position='relative' align='center' 
                     >                           
                         <Box 
                             position='absolute' 
                             ml='45%' 
                             mt='-60%'  
-                            h='100px' 
-                            w='100px'
+                            h='30px'
+                            w='20px' 
                             display={['none', 'none', 'flex', 'flex']} 
                         >
                             <NextImage src={vector1} position='absolute'   />
@@ -62,7 +62,9 @@ export const Banner = () => {
                         <Box 
                             mt={{sm:"-10%",md:"-20%",lg:'-10%',xl:'-30%'}}  
                             ml='-10%'
-                            display={['none', 'none', 'flex', 'flex']}   
+                            display={['none', 'none', 'flex', 'flex']}  
+                            h='30px'
+                            w='20px' 
                         >
                             <NextImage src={vector2}  position='absolute' />
                         </Box>
@@ -78,22 +80,25 @@ export const Banner = () => {
                     And Sale Rare
                     <Box
                         display="inline-flex"
-                        transform={{sm:"translateY(15%)", md:"translateY(10%)",lg:"translateY(15%)",xl:"translateY(25%)",'2xl':"translateY(10%)" }}
+                        transform={{sm:"translateY(15%)", md:"translateY(20%)",lg:"translateY(15%)",xl:"translateY(15%)",'2xl':"translateY(10%)" }}
                         w='20%'
                         position='relative'
+                        ml={{md:"1%",lg:"1%",xl:'-2%'}}
                     >
                         <Box 
                             h={{sm:"100px",md:"180px",lg:"200px",xl:'300px','2xl':'400px'}} 
                             w={{sm:"100px",md:"180px",lg:"200px",xl:'300px','2xl':'400px'}}
+                            
                         >
                             <NextImage src={bannerRect2}   position='absolute' />
                         </Box>
                         <Box 
-                            mt='10%'  
-                            mr='-10%' 
-                            h='100px' 
-                            w='100px' 
+                            mt={{md:"90%",lg:'80%', xl:"60%"}}
+                            h='30px'
+                            w='20px'  
                             display={['none', 'none', 'flex', 'flex']} 
+                            pos='absolute'
+                            ml={{md:"110%",lg:'120%', xl:"100%"}}
                         >
                             <NextImage src={vector1}    position='absolute'  />
                         </Box> 
