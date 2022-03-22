@@ -22,7 +22,7 @@ export const Art = () => {
             direction='column'
             ml={5}
             data-aos="fade-left" 
-            spacing={{sm:'1%' , md:'10'}}
+            spacing={{sm:'3%' , md:'10'}}
             >
             <Heading 
                 color='secondary' 

@@ -20,15 +20,15 @@ export default function Home() {
       </Head>
       <Flex  direction='column' justify='center' align='center' bg='primary' mx='auto' w='100%' position='relative'  >
         <Stack spacing={{sm:"10%",md:"15%",lg:"20%",xl:'15%'}}  w='100%' position='relative'>
-            <NavBar /> 
-            <Banner />
-            <About />
-            {/* <Card/> */}
+            {/* <NavBar />  */}
+            {/* <Banner />/ */}
+            {/* <About /> */}
+            <Card/>
             <Art />
             {/* <Roadmap /> */}
-            <CreateNFT/> 
-            <FAQ /> 
-            <Footer />  
+            {/* <CreateNFT/>  */}
+            {/* <FAQ />  */}
+            {/* <Footer />   */}
           </Stack>
       </Flex>
       

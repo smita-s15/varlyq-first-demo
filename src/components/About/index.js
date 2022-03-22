@@ -22,7 +22,7 @@ export const About = () => {
                         w={{sm:'200px', md:'250px', lg:'300px', xl:'400px','2xl':'480px'}}
                         direction='column' 
                         data-aos='fade-right' 
-                        spacing={{sm:'1%' , md:'10'}}
+                        spacing={{sm:'3%' , md:'10'}}
                     >
                         <Heading 
                             color='secondary' 

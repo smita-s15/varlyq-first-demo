@@ -42,7 +42,7 @@ export const CreateNFT = () => {
             </Button>
             <Heading fontWeight='bold' fontSize={{sm:'15px',md:'18px'}} mt={20} color='#9C00E8' >How To Be A Creator</Heading>
             <Text 
-                fontSize={{sm:'20px',md:'38px'}}
+                fontSize={{sm:'17px',md:'38px'}}
                 fontWeight='700'
                 lineHeight='55.81px'
                 letterSpacing={3}
