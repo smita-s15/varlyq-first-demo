@@ -3,12 +3,12 @@ import { Banner } from '../components/Banner'
 import { NavBar } from '../components/Navbar/index'
 import { About } from '../components/About'
 import { Flex , Stack} from '@chakra-ui/react'
-import { Art } from '../components/ArtGallery/ArtGallery'
 import { Roadmap } from '../components/Roadmap'
 import { Footer } from '../components/Footer'
 import { FAQ } from '../components/FAQ'
 import { Card } from '../components/Card'
 import { CreateNFT } from '../components/CreateNFT'
+import { Art } from '../components/ArtGallery'
 
 export default function Home() {
   return (
@@ -19,14 +19,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Flex  direction='column' justify='center' align='center' bg='primary' mx='auto' w='100%' position='relative'  >
-        <Stack spacing={{sm:"10%",md:"15%",lg:"20%",xl:'25%'}}  w='100%' position='relative'>
+        <Stack spacing={{sm:"10%",md:"15%",lg:"20%",xl:'15%'}}  w='100%' position='relative'>
             <NavBar /> 
             <Banner />
             <About />
-            <Card/>
-            {/* <Art />  */}
+            {/* <Card/> */}
+            <Art />
             {/* <Roadmap /> */}
-            {/* <CreateNFT/>  */}
+            <CreateNFT/> 
             {/* <FAQ />  */}
             {/* <Footer />   */}
           </Stack>

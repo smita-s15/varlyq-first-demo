@@ -41,7 +41,8 @@ export const Card = () => {
                 Hot Drops 
                 <NextImage src={fire} />
             </Text>
-            <Flex  justifyContent='center' width='80%' mt='62px' align='center'                   
+            <Flex  justifyContent='center' width='80%' mt='62px' align='center' 
+            
             >
                 {ExploreArr?.map((item, index) => {
                     return <NextLink key={index} href={item.link} passHref>

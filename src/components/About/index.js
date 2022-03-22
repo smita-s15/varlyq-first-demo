@@ -16,13 +16,12 @@ export const About = () => {
                 mr='60%'  
                 mt='10%'
             /> 
-            <Flex dir='row' position='relative'  justify='space-around'  align='center' w='80%'    >
+            <Flex dir='row' position='relative'   align='center' w='80%'    >
                     <Stack 
                         h={{sm:'200px', md:'250px', lg:'300px',xl:'400px', '2xl':'480px'}} 
                         w={{sm:'200px', md:'250px', lg:'300px', xl:'400px','2xl':'480px'}}
                         direction='column' 
                         data-aos='fade-right' 
-                        spacing={5}
 
                     >
                         <Heading 
@@ -54,9 +53,7 @@ export const About = () => {
                             color='secondary'
                             data-aos="zoom-down"
                             >
-                                <Text color='secondary' >
-                                    Explore
-                                </Text> 
+                                Explore
                         </Button>
                 </Stack>
                     <Box 
@@ -64,6 +61,7 @@ export const About = () => {
                         w={{sm:'200px', md:'250px', lg:'300px', xl:'400px', '2xl':'480px'}} 
                         data-aos='fade-left'  
                         align='center'
+                        ml={5}
                     >
                         <NextImage src={AboutImage} layout='responsive' />
                     </Box>

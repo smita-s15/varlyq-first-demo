@@ -59,14 +59,13 @@ export const FAQ = () => {
           })}
         </Accordion >
       </Box>
-        <Stack direction='column'  w='100%' h='300px' bg='rgba(39, 39, 39, 0.6)' mt='5%'   mx='auto' borderRadius="23px" mb="20" align="center" justify='center' spacing={6} >
+        <Stack direction='column'  w='100%' h='300px' bg='rgba(39, 39, 39, 0.6)' mt='5%'   mx='auto' borderRadius="23px" mb="20" align="center" justify='center' spacing={6}  textColor='white' >
                 <Text 
                   fontSize={{base:'20px', md:'25px', lg:'30px', xl:'38px'}}
                   fontWeight='700'
                   textAlign='center' 
-                  color='secondary'
                   position='relative'
-                  > 
+                > 
                   Join Our Community   
                 <Box position='absolute' ml='93%' mt='-30%' >
                     <NextImage src={vector1} position='absolute'  />
@@ -74,7 +73,6 @@ export const FAQ = () => {
                 </Text>
                 <Text  
                   fontSize={{base:'10px', md:'14px', lg:'16px', xl:'20px'}} 
-                  color='secondary'
                   textAlign='center'
                   >
                     At a very high level, most NFTs are part of the Ethereum blockchain.
