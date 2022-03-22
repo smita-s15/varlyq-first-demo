@@ -96,32 +96,17 @@ export const NavBar = () => {
                 >
                     {<HamburgerIcon />}
                 </Button>
-                {/* <Button 
-                    colorScheme='red'
-                    onClick={onClose}
-                >
-                    {<CloseButton />}
-                </Button> */}
-                <Drawer placement={placement} onClose={onClose} _focus={{ bg: 'primary' }} isOpen={isOpen} >
+                <Drawer placement={placement} onClose={onClose} _focus={{ bg: 'primary' }} isOpen={isOpen} w='20%' >
                     <DrawerOverlay />
                     <DrawerContent bg='primary'  >
-                        <Flex w='100%'>
-                            <DrawerHeader borderBottomWidth='1px solid secondary' color='secondary' >Menu</DrawerHeader>
-                        </Flex>
+                            <DrawerHeader  borderBottomWidth='1px solid secondary' color='secondary' fontSize='12px' >Menu</DrawerHeader>
                         <DrawerBody>
-                            <Stack  >
+                            <Stack fontSize='10px' >
                                 {Arr?.map((item, index) => {
                                     return <NextLink key={index} href={item.link} passHref  >
                                         <Link color="secondary" variant='unstyled'  >{item.title}</Link>
                                     </NextLink>
                                 })}
-                                <Input
-                                    fontSize={{ base: "10px", md: "13px", lg: "14px", xl: '16px', "2xl": '18px' }}
-                                    w={{ sm: '', md: '150px', lg: '200px', xl: '250px', '2xl': '290px' }}
-                                    h={{ sm: '', md: '25px', lg: '34px', xl: '30px', "2xl": '38px' }}
-                                    placeholder="search"
-                                    borderRadius="20"
-                                />
                             </Stack>
                         </DrawerBody>
                     </DrawerContent>

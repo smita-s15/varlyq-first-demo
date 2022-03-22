@@ -65,7 +65,6 @@ export const Card = () => {
             </Flex>
             <Button 
                 bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 110%, #052FC2 10%   )'   
-                p={5} 
                 w={{sm:'100px',md:'130px',lg:'145px', xl:'160px','2xl':'186px'}}
                 h={{sm:'30px',md:'30px',lg:'40px', xl:'50px', '2xl':'55px'}} 
                 fontSize={{sm:'10px',md:'12px',lg:'14px',xl:'16px'}}  
@@ -77,12 +76,12 @@ export const Card = () => {
                 _focus='transparent'
                 data-aos="zoom-out-down"
             >
-                <Text 
+                <a 
                     fontSize='18px'
                     letterSpacing='50%'
                     color='secondary'  >
                     View More
-                </Text> 
+                </a> 
             </Button>
         </Flex>
     )

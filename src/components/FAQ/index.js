@@ -20,23 +20,15 @@ export const FAQ = () => {
           FAQs 
         </Text>
       </Flex>
-        <Circle 
-          style={{ filter: "blur(300px)" }} 
-          w='300px' 
-          h="300px" 
-          bg='#052FC2' 
-          position='absolute' 
-          mr='80%' 
-          mt='-20%' 
-          /> 
+        <Circle dir={['none', 'none', 'flex', 'flex']} style={{ filter: "blur(600px)" }} mt={1} opacity='0.1' shadow='200px' w='500px' h="500px" bg='#052FC2' ml={-80} position='absolute' />
       <Box mt={10} w='100%' align='center' >
-        <Accordion allowToggle borderRadius='22px' textColor='secondary' fontSize='20px' w='100%' >
+        <Accordion allowToggle borderRadius='22px' textColor='secondary' w='100%' >
           {AccordItems.map((item, index) => {
             return <AccordionItem border='none' bg='rgba(39, 39, 39, 0.6)' key={index} my="10" py="5" borderRadius="30px" px="5" >
               {({ isExpanded }) => (
                 <>
                     <AccordionButton 
-                      h='10px' 
+                      h={{sm:'5px', md:"10px"}} 
                       _focus='transparent'
                       >
                       <Box flex='1' textAlign='left' >
@@ -48,8 +40,8 @@ export const FAQ = () => {
                           <AddIcon fontSize='12px' />
                           )}
                     </AccordionButton>
-                  <AccordionPanel pb={4}  textAlign='left' >
-                    <Box bg='#052FC2' mt='10px' p='1px'  opacity='0.5' />
+                  <AccordionPanel  textAlign='left' fontSize={{sm:'10px',md:'15px'}} >
+                    <Box bg='#052FC2' mt='10px'   opacity='0.5' />
                     {item.desc.map((des, keyIndex) => <Text key={keyIndex} mt='10px'  >{des}</Text>)}
                   </AccordionPanel>
                 </>
@@ -72,7 +64,7 @@ export const FAQ = () => {
                 </Box>          
                 </Text>
                 <Text  
-                  fontSize={{base:'10px', md:'14px', lg:'16px', xl:'20px'}} 
+                  fontSize={{sm:'12px', md:'14px', lg:'16px', xl:'20px'}} 
                   textAlign='center'
                   >
                     At a very high level, most NFTs are part of the Ethereum blockchain.
@@ -81,19 +73,20 @@ export const FAQ = () => {
                   bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 130%, #052FC2 10%   )' 
                   w={{sm:'100px',md:'130px',lg:'145px', xl:'160px','2xl':'186px'}}
                   h={{sm:'30px',md:'30px',lg:'40px', xl:'50px', '2xl':'55px'}} 
-                  fontSize={{sm:'10px',md:'12px',lg:'14px',xl:'16px'}}
+                  fontSize={{base:'10px',md:'14px',lg:'18px'}}  
                   borderRadius={20} 
                   shadow={5} 
                   mt={10}                             
                   fontWeight='500'
+                  textColor='secondary'
                   letterSpacing={2}
                   variant='link'
                   _focus='transparent'
                   data-aos="zoom-out-down"
                   >
-                    <Text color='secondary' >
+                    <a  >
                       Launch Discord
-                    </Text> 
+                    </a> 
               </Button>
         </Stack> 
     </Flex>

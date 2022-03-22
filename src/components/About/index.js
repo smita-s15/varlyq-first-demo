@@ -16,13 +16,13 @@ export const About = () => {
                 mr='60%'  
                 mt='10%'
             /> 
-            <Flex dir='row' position='relative'   align='center' w='80%'    >
+            <Flex bg='primary'  mx='auto' width='80%' direction='row' justify='space-around' alignContent='center'  >
                     <Stack 
                         h={{sm:'200px', md:'250px', lg:'300px',xl:'400px', '2xl':'480px'}} 
                         w={{sm:'200px', md:'250px', lg:'300px', xl:'400px','2xl':'480px'}}
                         direction='column' 
                         data-aos='fade-right' 
-
+                        spacing={{sm:'1%' , md:'10'}}
                     >
                         <Heading 
                             color='secondary' 
@@ -33,21 +33,19 @@ export const About = () => {
                         </Heading>
                         <Text 
                             color='secondary' 
-                            fontSize={{sm:'7px',md:'10px',lg:'16px',xl:'18px' , '2xl':'20px'}}
+                            fontSize={{sm:'6px',md:'10px',lg:'16px',xl:'18px' , '2xl':'20px'}}
                             mt={{sm:"3",md:"20"}}
                         >
                             At a very high level, most NFTs are part of the Ethereum blockchain. Ethereum is a cryptocurrency, like bitcoin or dogecoin, but its blockchain also supports these NFTs, which store extra information that makes them work differently from, say, an ETH coin. It is worth noting that other blockchains can implement their own versions of NFTs.
                         </Text>
                         <Button 
                             bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 110%, #052FC2 10%   )'   
-                            p={5} 
-                            w={{sm:'1px',md:'130px',lg:'145px', xl:'160px','2xl':'186px'}}
-                            h={{sm:'1px',md:'30px',lg:'40px', xl:'50px', '2xl':'55px'}} 
+                            w={{sm:'50px',md:'130px',lg:'145px', xl:'160px','2xl':'186px'}}
+                            h={{sm:'20px',md:'30px',lg:'40px', xl:'50px', '2xl':'55px'}} 
                             fontSize={{sm:'8px',md:'12px',lg:'14px',xl:'16px'}}  
-                            borderRadius={20} 
+                            borderRadius={{sm:'10px',md:'20px'}}
                             box-shadow='4px 38px 62px'
                             fontWeight='500'
-                            letterSpacing={2}
                             variant='link'
                             letterSpacing='50%'
                             color='secondary'
@@ -55,16 +53,16 @@ export const About = () => {
                             >
                                 Explore
                         </Button>
-                </Stack>
-                    <Box 
-                        h={{sm:'200px', md:'250px', lg:'300px', xl:'400px','2xl':'480px'}} 
-                        w={{sm:'200px', md:'250px', lg:'300px', xl:'400px', '2xl':'480px'}} 
-                        data-aos='fade-left'  
-                        align='center'
-                        ml={5}
-                    >
-                        <NextImage src={AboutImage} layout='responsive' />
-                    </Box>
+                    </Stack>
+                        <Box 
+                            h={{sm:'200px', md:'250px', lg:'300px', xl:'400px','2xl':'480px'}} 
+                            w={{sm:'200px', md:'250px', lg:'300px', xl:'400px', '2xl':'480px'}} 
+                            data-aos='fade-left'  
+                            align='center'
+                            ml={5}
+                        >
+                            <NextImage src={AboutImage} layout='responsive' />
+                        </Box>
             </Flex>
             <Circle dir={['none', 'none', 'flex', 'flex']} style={{ filter: "blur(600px)" }} mt={1} opacity='0.1' shadow='200px' w='500px' h="500px" bg='#052FC2' ml={-80} position='absolute' />
         </Flex>

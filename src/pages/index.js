@@ -27,8 +27,8 @@ export default function Home() {
             <Art />
             {/* <Roadmap /> */}
             <CreateNFT/> 
-            {/* <FAQ />  */}
-            {/* <Footer />   */}
+            <FAQ /> 
+            <Footer />  
           </Stack>
       </Flex>
       
