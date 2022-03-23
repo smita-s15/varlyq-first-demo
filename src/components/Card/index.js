@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, SimpleGrid, Text, Link, Circle, Box, Image } from "@chakra-ui/react"
+import { Button, Flex, Heading, SimpleGrid, Text, Link, Circle, Box } from "@chakra-ui/react"
 import NextImage from 'next/image'
 import RectOne from '../../../public/rect.png'
 import Rect2 from '../../../public/Rect2.png'
@@ -175,37 +175,27 @@ const CardArr = [
 ]
 
 const CardComponent = ({ image, title, desc, ether, etherImage }) => {
-
-    return <Flex direction="column" cursor="pointer" className={styles.hoverController}>
-
-        <Flex p="4" bg="#171717" w={{ sm: '250px', md: '260px' }} h={{ sm: '350px', md: '380px' }} borderRadius="16px" direction="column" align='center' data-aos="zoom-in" >
-
-            <Box className={styles.cardImage}>
-                <Image src="/rect.png" alt="logo-image" ></Image>
-            </Box>
-
-            <Flex justify='space-between' w='100%' className={styles.imageController}>
-                <Text fontSize="18px" color="secondary" mt="2">{title}</Text>
-                <Text fontSize="18px" color='secondary' mt="2">...</Text>
-            </Flex>
-
-            <Flex align='flex-start' w='100%' >
-                <Text color="#959595" mt='1' fontSize='14px'>
-                    {desc}
-                </Text>
-            </Flex>
-
-            <Flex justify="space-between" w='100%' align='center' mt='5px' alignContent='center' >
-                <Text fontSize='14px' color="customBlue">{ether}</Text>
-                <Circle h='20px' w='20px' bg='#5F7FEC' >
-                    <NextImage src={ETH} h='200px' w='200px' />
-                </Circle>
-            </Flex>
+    return <Flex p="4" bg="#171717" w={{ sm: '250px', md: '260px' }} h={{ sm: '300px', md: '380px' }} borderRadius="16px" direction="column" align='center' data-aos="zoom-in" className={styles.hoverController} >
+        
+        <NextImage src={image} width="233px" height="267px" alt="logo-image"></NextImage>
+        <Flex justify='space-between' w='100%'>
+            <Text fontSize="18px" color="secondary" mt="2">{title}</Text>
+            <Text fontSize="18px" color='secondary' mt="2">...</Text>
+        </Flex>
+        <Flex align='flex-start' w='100%' >
+            <Text color="#959595" mt='1' fontSize='14px'>
+                {desc}
+            </Text>
+        </Flex>
+        <Flex justify="space-between" w='100%' align='center' mt='5px' alignContent='center' >
+            <Text fontSize='14px' color="customBlue">{ether}</Text>
+            <Circle h='20px' w='20px' bg='#5F7FEC' >
+                <NextImage src={ETH} h='200px' w='200px' />
+            </Circle>
         </Flex>
 
-        <HoverButton />
+            <HoverButton   />
     </Flex>
-
 }
 
 const HoverButton = () => {
@@ -223,8 +213,6 @@ const HoverButton = () => {
             color='secondary'
             data-aos="zoom-down"
             className={styles.hoverCollectBtn}
-            mx="auto"
-            mt="-100px"
         >
             Collect Now
         </Button>

@@ -1,4 +1,4 @@
-import { Button, Flex, Input, Link, Stack, Text, Circle, Box, useDisclosure, RadioGroup, Radio, Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody } from "@chakra-ui/react"
+import { Button, Flex, Input, Link, Stack, Text, Circle, Box, useDisclosure, RadioGroup, Radio, Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody,CloseButton } from "@chakra-ui/react"
 import NextLink from 'next/link'
 import React, { useState } from "react";
 import {
@@ -11,7 +11,7 @@ import {
     MenuOptionGroup,
     MenuDivider,
 } from '@chakra-ui/react'
-import { HamburgerIcon, CloseButton } from '@chakra-ui/icons'
+import { HamburgerIcon } from '@chakra-ui/icons'
 
 
 export const NavBar = () => {
@@ -99,8 +99,9 @@ export const NavBar = () => {
                 <Drawer placement={placement} onClose={onClose} _focus={{ bg: 'primary' }} isOpen={isOpen} w='20%' >
                     <DrawerOverlay />
                     <DrawerContent bg='primary'  >
-                            <DrawerHeader  borderBottomWidth='1px solid secondary' color='secondary' fontSize='12px' >Menu</DrawerHeader>
+                        <DrawerHeader borderBottomWidth='1px solid secondary' color='secondary' fontSize='12px' >Menu</DrawerHeader>
                         <DrawerBody>
+                            <CloseButton color="white" onClick={onClose} position="absolute" top="2" right="2" />
                             <Stack fontSize='10px' >
                                 {Arr?.map((item, index) => {
                                     return <NextLink key={index} href={item.link} passHref  >

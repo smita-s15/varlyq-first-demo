@@ -1,9 +1,9 @@
-import { Circle, Flex, Text } from "@chakra-ui/react"
+import { Circle, Flex, Stack, Text } from "@chakra-ui/react"
 
 export const SeccondComponent = ({ children, percent }) => {
     return (
-        <Flex direction="column" pos="relative" data-aos="zoom-in" >
-            <Flex pos="absolute" top="0" right="0" justify="flex-end">
+        <Flex direction="column" pos="relative" data-aos="zoom-in" w={{sm:"80%",md:"100%"}} >
+            <Flex pos="absolute" top="0" right="0" justify="flex-end" >
                 {children}
             </Flex>
             <Circle 
@@ -17,18 +17,18 @@ export const SeccondComponent = ({ children, percent }) => {
                 /> 
             <Flex align="flex-end" direction='column'>
                 <Flex direction='column' transform="translateX(88%)" >
-                    <Flex py="3" align="center" mr={{base:'55px', md:'45px',lg:'33px'}} fontSize={{base:'20px', md: "25px", lg:'30px' }}>
-                        <Circle w="40px" h="40px" bg='secondary'  />
-                        <Text ml="5" color="white" >
-                            {percent}
-                        </Text>
-                    </Flex>
+                <Stack py="3"  align="center" fontSize={{ base: '10px', md: "25px", lg: '30px' }} justify='space-between' direction='row' spacing={2} mr={{sm:'28%', md:'10%'}}>
+                    <Circle w={{ sm: "15px", md: "40px" }} h={{ sm: "15px", md: "40px" }} bg='secondary' />
+                    <Text color="white" >
+                        {percent}
+                    </Text>
+                </Stack>
                 </Flex>
-                <Flex boxSize="240" borderRight="3px solid #052FC2" borderBottom="3px solid #052FC2" borderBottomRightRadius="50%"  >
+                <Flex width={{ sm: "120px", md: "240px" }} height={{ sm: "120px", md: "240px" }}  borderRight="3px solid #052FC2" borderBottom="3px solid #052FC2" borderBottomRightRadius="50%"  >
                 </Flex>
             </Flex>
             <Flex justify="flex-start" >
-                <Flex w={{sm:"80px",md:"160px"}} h={{sm:"30px",md:"100px"}} mt="-3px" borderTop="3px solid #052FC2" borderLeft="3px solid #052FC2" borderTopLeftRadius="90px"  >
+                <Flex w="70%" h="100px" mt="-3px" borderTop="3px solid #052FC2" borderLeft="3px solid #052FC2" borderTopLeftRadius="90px"  >
                 </Flex>
             </Flex>
         </Flex>
