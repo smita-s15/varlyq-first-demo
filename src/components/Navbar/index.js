@@ -21,10 +21,9 @@ export const NavBar = () => {
 
 
     return (
-        <Flex bg="primary" h='100px' width='100%' mx='auto'  >
-
+        <Flex  width='100%' mx='auto' h={{sm:'50px',md:'100px'}}  >
             <Flex
-                bg="primary" h='100px' width='100%' mx='auto' justify='flex-end' align='center'
+                bg="primary"  width='100%' mx='auto' justify='flex-end' align='center'
                 display={['none', 'none', 'flex', 'flex']}
             >
                 <Stack
@@ -52,8 +51,8 @@ export const NavBar = () => {
                     })}
                     <Input
                         fontSize={{ base: "10px", md: "13px", lg: "14px", xl: '16px', "2xl": '18px' }}
-                        w={{ sm: '', md: '150px', lg: '200px', xl: '250px', '2xl': '290px' }}
-                        h={{ sm: '', md: '25px', lg: '34px', xl: '30px', "2xl": '38px' }}
+                        w={{md: '150px', lg: '200px', xl: '250px', '2xl': '290px' }}
+                        h={{ md: '25px', lg: '34px', xl: '30px', "2xl": '38px' }}
                         placeholder="search"
                         borderRadius="20"
                     />

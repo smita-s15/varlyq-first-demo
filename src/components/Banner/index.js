@@ -16,16 +16,9 @@ export const Banner = () => {
             mx='auto'
             align='center'
             direction='column'
-            py="28"
+            bg="primary"
+            h={{sm:'50%',md:'60%'}} 
         >
-            <Flex
-                bg="primary"
-                align='center'
-                mx="auto"
-                w="100%"
-                justify='center'
-            >
-
                 <Circle
                     style={{ filter: "blur(290px)" }}
                     w='350px'
@@ -43,7 +36,6 @@ export const Banner = () => {
                     w={{xl:'100%' , '2xl':'80%'}}
                     position='relative'
                     data-aos="zoom-out-down"
-                    position='relative'
                 >
                       Discover
                     <Box
@@ -132,6 +124,5 @@ export const Banner = () => {
                     mb='-30%'
                 />
             </Flex>
-        </Flex>
     )
 }

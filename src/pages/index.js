@@ -19,9 +19,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Flex direction='column' justify='center' align='center' bg='primary' mx='auto' w='100%'   >
-        <Stack spacing="10%" w='100%' mx='auto' >
+        <Stack spacing='20%' w='100%' mx='auto' >
           <NavBar />
-          <Banner />
+          <Banner  />
           <About />
           <Card/>
           <Art />
