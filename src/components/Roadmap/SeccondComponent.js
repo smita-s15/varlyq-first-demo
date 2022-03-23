@@ -28,7 +28,7 @@ export const SeccondComponent = ({ children, percent }) => {
                 </Flex>
             </Flex>
             <Flex justify="flex-start" >
-                <Flex w="160px" h="100px" mt="-3px" borderTop="3px solid #052FC2" borderLeft="3px solid #052FC2" borderTopLeftRadius="90px"  >
+                <Flex w={{sm:"80px",md:"160px"}} h={{sm:"30px",md:"100px"}} mt="-3px" borderTop="3px solid #052FC2" borderLeft="3px solid #052FC2" borderTopLeftRadius="90px"  >
                 </Flex>
             </Flex>
         </Flex>

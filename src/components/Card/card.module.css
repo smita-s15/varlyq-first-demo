@@ -1,0 +1,16 @@
+.hoverCollectBtn{
+    display: none !important;
+}
+
+.cardImage{
+    width:200px;
+     height:230px; 
+}
+.hoverController:hover .hoverCollectBtn {
+    display: block !important;
+}
+ 
+.hoverController:hover .cardImage {
+    width:130px;
+    height:160px; 
+}

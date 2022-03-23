@@ -64,29 +64,27 @@ export const FAQ = () => {
                 </Box>          
                 </Text>
                 <Text  
-                  fontSize={{sm:'12px', md:'14px', lg:'16px', xl:'20px'}} 
+                  fontSize={{sm:'10px', md:'14px', lg:'16px', xl:'20px'}} 
                   textAlign='center'
                   >
                     At a very high level, most NFTs are part of the Ethereum blockchain.
                   </Text>
                 <Button 
                   bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 130%, #052FC2 10%   )' 
-                  w={{sm:'100px',md:'130px',lg:'145px', xl:'160px','2xl':'186px'}}
-                  h={{sm:'30px',md:'30px',lg:'40px', xl:'50px', '2xl':'55px'}} 
+                  w={{sm:'100px',md:'130px',}}
+                  h={{sm:'30px',md:'50px'}} 
                   fontSize={{base:'10px',md:'14px',lg:'18px'}}  
                   borderRadius={20} 
                   shadow={5} 
                   mt={10}                             
                   fontWeight='500'
                   textColor='secondary'
-                  letterSpacing={2}
+                  letterSpacing='50%'
                   variant='link'
                   _focus='transparent'
                   data-aos="zoom-out-down"
                   >
-                    <a  >
-                      Launch Discord
-                    </a> 
+                    Launch Discord
               </Button>
         </Stack> 
     </Flex>

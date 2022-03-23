@@ -27,8 +27,8 @@ export const CreateNFT = () => {
             /> 
             <Button 
                  bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 110%, #052FC2 10%   )'   
-                 w={{sm:'80px',md:'130px',lg:'145px', xl:'160px','2xl':'186px'}}
-                 h={{sm:'30px',md:'30px',lg:'40px', xl:'50px', '2xl':'55px'}} 
+                 w={{sm:'80px',md:'130px'}}
+                 h={{sm:'30px',md:'50px'}} 
                  fontSize={{sm:'8px',md:'12px',lg:'14px',xl:'16px'}}  
                  borderRadius={{sm:'10px',md:'20px'}}
                  box-shadow='4px 38px 62px'
@@ -50,16 +50,16 @@ export const CreateNFT = () => {
             >
                 Create and Sell Your NFTs 
             </Text>
-            <Flex w='100%' mx='auto' wrap="wrap">
-                <Stack direction={{sm:'column',md:'row', lg:'row', xl:'row'}} mx='auto' align='center' justify='space-between' spacing={{sm:'10',md:'20'}}  mt={20}  wrap="wrap" >
+            <Flex w='100%' mx='auto' >
+                <Stack direction={{sm:'column',xl:'row'}} mx='auto' align='center' justify='space-between' spacing={{sm:'10',md:'20'}}  mt={20}   >
                         {NFTArr.map((item, index) => <NFTCard key={index} image={item.image} title={item.title} ether={item.ether} />)}
                 </Stack>
             </Flex>
             <Stack direction='row' justify='space-between' spacing={10}  mt={20}>
             <Button 
                  bgGradient='linear( to-tl, #052FC2 41.3%, #FFFFFF 110%, #052FC2 10%   )'   
-                 w={{sm:'80px',md:'130px',lg:'145px', xl:'160px','2xl':'186px'}}
-                 h={{sm:'30px',md:'30px',lg:'40px', xl:'50px', '2xl':'55px'}} 
+                 w={{sm:'80px',md:'130px'}}
+                 h={{sm:'30px',md:'50px'}} 
                  fontSize={{sm:'8px',md:'12px',lg:'14px',xl:'16px'}}  
                  borderRadius={{sm:'10px',md:'20px'}}
                  box-shadow='4px 38px 62px'
@@ -73,8 +73,8 @@ export const CreateNFT = () => {
             </Button>
             <Button   
                 border="1px solid white"
-                 w={{sm:'80px',md:'130px',lg:'145px', xl:'160px','2xl':'186px'}}
-                 h={{sm:'30px',md:'30px',lg:'40px', xl:'50px', '2xl':'55px'}} 
+                 w={{sm:'80px',md:'130px'}}
+                 h={{sm:'30px',md:'50px'}} 
                  borderRadius={{sm:'10px',md:'20px'}}
                  fontSize={{sm:'8px',md:'12px',lg:'14px',xl:'16px'}}  
                  box-shadow='4px 38px 62px'
@@ -100,27 +100,25 @@ export const CreateNFT = () => {
                 Create and Sell Your NFTs 
             </Text>
 
-                <SimpleGrid columns={{sm:'1',md:'1',lg:'2', xl:'3'}} spacing="10" textColor='secondary' alignItems='center' mt={20} >
+                <SimpleGrid columns={{sm:'1',md:'1',lg:'2', '2xl':'3'}} spacing="10" textColor='secondary' alignItems='center' mt={20} >
                     {CardArr.map((item, index) => <NFTComponent key={index} image={item.image} title={item.title} ether={item.ether} />)}
                 </SimpleGrid>
 
                 <Button    
-                    w={{sm:'100px',md:'150px',lg:'150px',xl:'186px'}}
-                    h={{sm:'40px',md:'45px',lg:'50px',xl:'55px'}} 
+                    w={{sm:'100px',md:'130px'}}
+                    h={{sm:'40px',md:'50px'}} 
                     fontSize={{base:'10px',md:'14px',lg:'18px'}}  
                     borderRadius={20} mt={10} 
                     box-shadow='4px 38px 62px'
                     fontWeight='500'
-                    letterSpacing={2}
+                    letterSpacing='50%'
                     variant='link'
                     border= "1px solid white"
                     textColor='secondary'
                     _focus='transparent'
                     data-aos="zoom-out-down"
                 >
-                    <a align='center'  >
                         View Ranking
-                    </a>
                 </Button>
             </Flex>
         </Flex>

@@ -16,6 +16,7 @@ export const Banner = () => {
             mx='auto'
             align='center'
             direction='column'
+            py="28"
         >
             <Flex
                 bg="primary"
